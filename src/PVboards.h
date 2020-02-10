@@ -19,7 +19,8 @@ private:
 	size_t numberBoards;
 	float fieldSize;
 	std::vector<ChessBoard> vecBoard;
-	std::vector<TextInput> vecText;
+	size_t numberInfo;
+	std::vector<std::vector<TextInput>> vecText;
 
 	void adjust();
 

@@ -56,6 +56,14 @@ int main(int argc, char *argv[])
 
 			if (event.type == sf::Event::TextEntered)
 				text.processEvent(event);
+
+			if (event.type == sf::Event::MouseButtonPressed)
+			{
+			    if (event.mouseButton.button == sf::Mouse::Right)
+			    {
+			    	game.flip = ! game.flip;
+			    }
+			}
 		}
 
 		input = text.getInput();

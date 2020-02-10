@@ -30,5 +30,6 @@ public:
 	void setInput(std::string);
 	void setPosition(sf::Vector2f);
 	void setFontSize(int);
+	void setLength(int);
 	void draw(sf::RenderWindow&) const;
 };

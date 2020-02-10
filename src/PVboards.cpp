@@ -1,12 +1,18 @@
 #include "PVboards.h"
 
 PVboards::PVboards() :
-		numberBoards(4), fieldSize(40.0f)
+		numberBoards(4), fieldSize(40.0f), numberInfo(3)
 {
 	for (size_t i = 0; i < numberBoards; i++)
 	{
 		vecBoard.push_back(ChessBoard());
-		vecText.push_back(TextInput());
+
+		std::vector<TextInput> vT;
+		for (size_t info = 0; info < numberInfo; info++)
+		{
+			vT.push_back(TextInput());
+		}
+		vecText.push_back(vT);
 	}
 
 
@@ -25,9 +31,13 @@ void PVboards::adjust()
 			vecBoard[idx].setPosition( { 15.0f + x * (boardSize + 50.0f), 15.0f + y * (boardSize + 50.0f) });
 			vecBoard[idx].setFieldSize(fieldSize);
 
-			vecText[idx].setPosition( { 15.0f + x * (boardSize + 50.0f), 20.0f + y * (boardSize + 50.0f) + boardSize });
-			vecText[idx].setFontSize(15);
-			vecText[idx].setInput("");
+			for (size_t info = 0; info < numberInfo; info++)
+			{
+				vecText[idx][info].setPosition( { 15.0f + x * (boardSize + 50.0f) + 120 * info, 20.0f + y * (boardSize + 50.0f) + boardSize });
+				vecText[idx][info].setFontSize(14);
+				vecText[idx][info].setLength(12);
+				vecText[idx][info].setInput("");
+			}
 		}
 	}
 }
@@ -60,12 +70,18 @@ void PVboards::update(Game game)
 				vecBoard[i].updateMoves();
 				vecBoard[i].setAnimateVariation(true);
 
-				std::stringstream EA;
+				std::stringstream score;
 				std::string moveList = game.vecPly.back().vecEA[i].moveList;
-				moveList = moveList.substr(0, 30);
-				float score = (float)(game.vecPly.back().vecEA[i].score) / 100;
-				EA <<  moveList << score << std::setfill('0') << std::setprecision(3) << std::setw(6);
-				vecText[i].setInput(EA.str());
+				score << std::setw(6) << std::setprecision(2)<< (float)(game.vecPly.back().vecEA[i].score) / 100;
+				moveList = moveList.substr(0, 10);
+				int depth = game.vecPly.back().vecEA[i].depth;
+
+				std::vector<std::string> infoMsg{ moveList, score.str(), std::to_string(depth) };
+
+				for (size_t info = 0; info < numberInfo; info++)
+				{
+					vecText[i][info].setInput(infoMsg[info]);
+				}
 			}
 			else
 			{
@@ -91,8 +107,11 @@ void PVboards::draw(sf::RenderWindow &target) const
 		board.draw(target);
 	}
 
-	for (auto &text : vecText)
+	for (auto &info : vecText)
 	{
-		text.draw(target);
+		for(auto &i : info)
+		{
+			i.draw(target);
+		}
 	}
 }

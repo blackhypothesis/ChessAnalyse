@@ -95,6 +95,11 @@ void TextInput::setFontSize(int fontSize)
 	text.setCharacterSize(fontSize);
 }
 
+void TextInput::setLength(int length)
+{
+	this->maxTextLength = length;
+	init();
+}
 void TextInput::draw(sf::RenderWindow &target) const
 {
 	target.draw(backgroundRect);
