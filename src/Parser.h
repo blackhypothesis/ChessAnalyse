@@ -8,26 +8,21 @@
 #include <regex>
 #include <vector>
 #include <string>
-#include <SFML/Graphics.hpp>
 
 #include "ThreadSaveQueue.h"
 #include "Game.h"
-#include "ChessBoard.h"
 
 class Parser
 {
 public:
 	Parser() = delete;
-	Parser(ThreadSaveQueue&, ThreadSaveQueue&, ThreadSaveQueue&, Game&, sf::RenderWindow&);
+	Parser(ThreadSaveQueue&, ThreadSaveQueue&, ThreadSaveQueue&, Game&);
 
 private:
 	ThreadSaveQueue& stdOut;
 	ThreadSaveQueue& userStdOut;
 	ThreadSaveQueue& instruction;
 	Game& game;
-	sf::RenderWindow& boardWindow;
-	ChessBoard board;
-	std::vector<ChessBoard> vecBoard;
 
 	EngineAnalysis ea;
 	std::string command;

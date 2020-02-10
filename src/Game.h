@@ -37,5 +37,6 @@ struct Ply
 struct Game
 {
 	std::vector<Ply> vecPly;
+	bool flip = false;
 };
 

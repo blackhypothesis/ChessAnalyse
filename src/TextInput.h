@@ -27,5 +27,8 @@ private:
 public:
 	void processEvent(sf::Event);
 	std::string getInput();
+	void setInput(std::string);
+	void setPosition(sf::Vector2f);
+	void setFontSize(int);
 	void draw(sf::RenderWindow&) const;
 };

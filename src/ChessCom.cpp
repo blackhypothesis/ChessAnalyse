@@ -49,8 +49,8 @@ void ChessCom::operator()()
 						const std::string chessComMoveList = match[1];
 						const std::string moveList = getMoveList(chessComMoveList);
 						const std::string chessComCommand = "chesscom movelist " + std::string("\"") + moveList + "\"";
-						const std::string chessComInfo = "chesscom info movelist " + chessComMoveList;
-						userStdOut.push(chessComInfo);
+						// const std::string chessComInfo = "chesscom info movelist " + chessComMoveList;
+						// userStdOut.push(chessComInfo);
 						userStdOut.push(chessComCommand);
 					}
 				}

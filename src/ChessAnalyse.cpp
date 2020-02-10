@@ -1,26 +1,49 @@
 #include <iostream>
+#include <thread>
 
 #include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
+
+#include "Game.h"
+#include "Parser.h"
+#include "ThreadSaveQueue.h"
+#include "ProcessInOut.h"
+#include "ChessCom.h"
 
 #include "TextInput.h"
 #include "ChessBoard.h"
+#include "PVboards.h"
 
-
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	std::string cwp(argv[0]);
+
+	const std::string chessEnginePath = "/home/marcel/workspace/ChessAnalyse/assets/bin/stockfish-bmi2";
+	ThreadSaveQueue stdIn("stdIn");
+	ThreadSaveQueue stdOut("stdOut");
+	ThreadSaveQueue instruction("instruction");
+	ThreadSaveQueue userStdOut("userStdOut");
 
 	int nFPS = 10;
 	sf::Clock clock;
 
-	sf::RenderWindow window(sf::VideoMode(800, 600), "Chess Analyse");
+	sf::RenderWindow window(sf::VideoMode(800, 950), "Chess Analyse");
 	window.setFramerateLimit(nFPS);
 
-	TextInput text = TextInput({ 15.0f, 550.0f });
+	TextInput text = TextInput( { 15.0f, 750.0f });
 	std::string input;
 
-	ChessBoard cb;
+	PVboards pvBoards;
+
+	Game game;
+
+	ChildProcInOut chessEngine = ChildProcInOut(chessEnginePath, stdIn, stdOut, instruction);
+	chessEngine.execChild();
+
+	Parser parser(stdOut, userStdOut, instruction, game);
+	std::thread parserThread(parser);
+
+	ChessCom cc(userStdOut);
+	std::thread ccThread(cc);
 
 	while (window.isOpen())
 	{
@@ -39,18 +62,20 @@ int main(int argc, char* argv[])
 
 		if (input.size() > 0)
 		{
-			std::cout << "input = " << input << std::endl;
+			userStdOut.push(input);
 		}
 
+		pvBoards.update(game);
+
 		window.clear();
-		cb.draw(window);
+		pvBoards.draw(window);
 		text.draw(window);
 		window.display();
 
 		if (!nFPS--)
 		{
 			nFPS = (int) (1000000 / elapsed.asMicroseconds());
-			std::cout << "FPS: " << nFPS << std::endl;
+			// std::cout << "FPS: " << nFPS << std::endl;
 		}
 	}
 

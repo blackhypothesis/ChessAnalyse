@@ -50,6 +50,7 @@ private:
 	unsigned int x1, y1, x2, y2;
 
 public:
+	void reset();
 	void setChessStartPosition();
 	void updateChessBoard();
 	void setMoves(std::string);

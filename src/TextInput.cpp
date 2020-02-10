@@ -3,6 +3,11 @@
 TextInput::TextInput() :
 		position(10.0f, 10.0f), maxTextLength(32), fontSize(15), input(""), textInputStr("")
 {
+	namespace fs = std::filesystem;
+	auto cwp = fs::current_path();
+	std::cout << "current path = " << cwp << std::endl;
+	fontConsolas.loadFromFile("/home/marcel/workspace/ChessAnalyse/assets/Consolas.ttf");
+
 	init();
 }
 
@@ -17,11 +22,6 @@ TextInput::TextInput(sf::Vector2f position) :
 
 void TextInput::init()
 {
-	namespace fs = std::filesystem;
-	auto cwp = fs::current_path();
-	std::cout << "current path = " << cwp << std::endl;
-	fontConsolas.loadFromFile("/home/marcel/workspace/ChessAnalyse/assets/Consolas.ttf");
-
 	// approximated size of input field for font Consolas.ttf
 	float backgroundWidth = fontSize * maxTextLength * 0.59f;
 	float backgroundHeight = fontSize * 1.6f;
@@ -76,6 +76,23 @@ std::string TextInput::getInput()
 	std::string tmp = input;
 	input = "";
 	return tmp;
+}
+
+void TextInput::setInput(std::string msg)
+{
+	text.setString(msg);
+}
+
+void TextInput::setPosition(sf::Vector2f position)
+{
+	this->position = position;
+	init();
+}
+
+void TextInput::setFontSize(int fontSize)
+{
+	this->fontSize = fontSize;
+	text.setCharacterSize(fontSize);
 }
 
 void TextInput::draw(sf::RenderWindow &target) const

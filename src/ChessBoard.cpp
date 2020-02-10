@@ -24,7 +24,13 @@ ChessBoard::ChessBoard() :
 		aPieceTexture[i].setSmooth(true);
 	}
 
+	reset();
+}
+
+void ChessBoard::reset()
+{
 	setChessStartPosition();
+	setScore(0);
 	updateChessBoard();
 }
 

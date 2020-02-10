@@ -1,11 +1,10 @@
 #include "Parser.h"
 
-Parser::Parser(ThreadSaveQueue& inStdOut, ThreadSaveQueue& inUserStdOut, ThreadSaveQueue& inInstr, Game& inGame, sf::RenderWindow& inBoardWindow) :
+Parser::Parser(ThreadSaveQueue& inStdOut, ThreadSaveQueue& inUserStdOut, ThreadSaveQueue& inInstr, Game& inGame) :
 		stdOut(inStdOut),
 		userStdOut(inUserStdOut),
 		instruction(inInstr),
 		game(inGame),
-		boardWindow(inBoardWindow),
 		wait_ms(5)
 
 {
@@ -14,18 +13,6 @@ Parser::Parser(ThreadSaveQueue& inStdOut, ThreadSaveQueue& inUserStdOut, ThreadS
 
 void Parser::init()
 {
-	float fSize = 25;
-	for	(int i = 0; i < 4; i++)
-	{
-		vecBoard.push_back(ChessBoard());
-	}
-
-	for (size_t i = 0; i < vecBoard.size(); i++)
-	{
-		vecBoard[i].setPosition({ 10.0f, 5.0f + i * fSize  * 8  + 5 * i});
-		vecBoard[i].setFieldSize(fSize);
-	}
-
 	game.vecPly.clear();
 	current_ply = 0;
 	current_moveList = "";
@@ -42,7 +29,7 @@ void Parser::init()
 
 	hash_value = 512;
 	threads_value = 2;
-	multiPV_value = 5;
+	multiPV_value = 4;
 
 	instruction.push("setoption name Hash value " + std::to_string(hash_value));
 	instruction.push("setoption name Threads value " + std::to_string(threads_value));
@@ -149,39 +136,8 @@ std::vector<std::string> Parser::parse(std::string subject)
 				// print eval and board
 				if (viewState == SHORT && game.vecPly.back().vecEA.size() == current_pv_count)
 				{
-					printShortInfo(game.vecPly.back());
-
-					boardWindow.clear();
-
-					for (size_t i = 0; i < vecBoard.size(); i++)
-					{
-						if (i < game.vecPly.back().vecEA.size())
-						{
-							if (game.vecPly.back().vecEA[i].score > 100)
-							  vecBoard[i].setColors({200, 200, 200}, {58, 108, 189});
-							else if (game.vecPly.back().vecEA[i].score > 0)
-							  vecBoard[i].setColors({200, 200, 200}, {66, 166, 78});
-							else if (game.vecPly.back().vecEA[i].score > -100)
-							  vecBoard[i].setColors({200, 200, 200}, {240, 232, 7});
-							else
-							  vecBoard[i].setColors({200, 200, 200}, {212, 71, 42});
-
-							vecBoard[i].setMoves(game.vecPly.back().moveList);
-							vecBoard[i].setVariant(game.vecPly.back().vecEA[i].moveList);
-							vecBoard[i].setScore(game.vecPly.back().vecEA[i].score);
-							vecBoard[i].updateMoves();
-							vecBoard[i].setAnimateVariation(true);
-
-							if (i == 0)
-							{
-								vecBoard[i].setHighlightLastMove(false);
-							}
-							if (i == 1)
-							{
-								vecBoard[i].setAnimateVariation(false);
-							}
-						}
-					}
+					// ##### prints too much info.
+					// printShortInfo(game.vecPly.back());
 				}
 			}
 		}
@@ -190,7 +146,7 @@ std::vector<std::string> Parser::parse(std::string subject)
 		else if (std::regex_search(subject, match, rexReadyOK))
 		{
 			waitForReadyOK = false;
-			std::cout << "READYOK!" << std::endl;
+			// std::cout << "READYOK!" << std::endl;
 		}
 		// info from chess engine
 		else if (std::regex_search(subject, match, rexInfoCurrentMove))
@@ -302,10 +258,7 @@ std::vector<std::string> Parser::parseUser(std::string subject)
 			}
 			else if (subCommand == "flip")
 			{
-				for (auto& board: vecBoard)
-				{
-					board.flipBoard();
-				}
+				game.flip = ! game.flip;
 			}
 			else
 				std::cout << ">> game <unknown command>" << std::endl;
@@ -334,7 +287,7 @@ std::vector<std::string> Parser::parseUser(std::string subject)
 		{
 			waitForReadyOK = true;
 			vecInstruction.push_back(subject);
-			std::cout << "ISREADY?" << std::endl;
+			// std::cout << "ISREADY?" << std::endl;
 		}
 		// chessCom
 		// get info from chesscom
@@ -426,11 +379,7 @@ void Parser::printInfo()
 void Parser::operator()()
 {
 	std::string line;
-
 	unsigned int notReadyOut = 0;
-	int waitGraphicsUpdate = 20;
-	int currentGraphicsUpdate = 0;
-	int updateVariation = 0;
 
 	while (true)
 	{
@@ -480,28 +429,5 @@ void Parser::operator()()
 		}
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(wait_ms));
-
-		// update graphics only every update_graphics_ms
-		currentGraphicsUpdate ++;
-		if (currentGraphicsUpdate >= waitGraphicsUpdate)
-		{
-			updateVariation++;
-			if (updateVariation % 10 == 0)
-			{
-				updateVariation = 0;
-				for (size_t i = 0; i < vecBoard.size(); i++)
-				{
-					vecBoard[i].nextPlyAnimateVariation();
-				}
-			}
-
-			for (size_t i = 0; i < vecBoard.size(); i++)
-			{
-				vecBoard[i].draw(boardWindow);
-			}
-
-			boardWindow.display();
-			currentGraphicsUpdate = 0;
-		}
 	}
 }
