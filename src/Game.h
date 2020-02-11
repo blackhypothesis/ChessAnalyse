@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -38,5 +39,6 @@ struct Game
 {
 	std::vector<Ply> vecPly;
 	bool flip = false;
+	void print();
 };
 

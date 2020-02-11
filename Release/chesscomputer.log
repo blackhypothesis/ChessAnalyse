@@ -1,0 +1,844 @@
+instruction> setoption name Hash value 512
+stdOut> Stockfish 060919 64 BMI2 by T. Romstad, M. Costalba, J. Kiiski, G. Linscott
+instruction> setoption name Threads value 2
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 "
+instruction> setoption name MultiPV value 4
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 "
+userStdOut> stop
+instruction> stop
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+stdOut> info depth 1 seldepth 1 multipv 1 score cp 48 nodes 125 nps 125000 tbhits 0 time 1 pv b8c6
+stdOut> info depth 1 seldepth 1 multipv 2 score cp 24 nodes 125 nps 125000 tbhits 0 time 1 pv g8f6
+stdOut> info depth 1 seldepth 1 multipv 3 score cp 3 nodes 125 nps 125000 tbhits 0 time 1 pv g8e7
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -1 nodes 125 nps 125000 tbhits 0 time 1 pv b7b6
+stdOut> info depth 2 seldepth 2 multipv 1 score cp 181 nodes 563 nps 563000 tbhits 0 time 1 pv g8f6 b2b3
+stdOut> info depth 2 seldepth 2 multipv 2 score cp 18 nodes 563 nps 563000 tbhits 0 time 1 pv d7d5 d2d3 d5e4
+stdOut> info depth 2 seldepth 2 multipv 3 score cp -24 nodes 563 nps 563000 tbhits 0 time 1 pv b8c6 d2d3
+stdOut> info depth 2 seldepth 2 multipv 4 score cp -38 nodes 563 nps 563000 tbhits 0 time 1 pv g8e7 d2d3
+stdOut> info depth 3 seldepth 3 multipv 1 score cp 5 nodes 1230 nps 615000 tbhits 0 time 2 pv b8c6 d2d3 g8e7
+stdOut> info depth 3 seldepth 3 multipv 2 score cp 5 nodes 1230 nps 615000 tbhits 0 time 2 pv g8e7 d2d3 b8c6
+stdOut> info depth 3 seldepth 3 multipv 3 score cp -12 nodes 1230 nps 615000 tbhits 0 time 2 pv g8f6 d2d3 b8c6
+stdOut> info depth 3 seldepth 3 multipv 4 score cp -77 nodes 1230 nps 615000 tbhits 0 time 2 pv f7f5 d2d3 b8c6 e4f5
+stdOut> info depth 4 seldepth 4 multipv 1 score cp -32 nodes 2320 nps 1160000 tbhits 0 time 2 pv b8c6 d2d3 g8f6 b1d2
+stdOut> info depth 4 seldepth 4 multipv 2 score cp -32 nodes 2320 nps 1160000 tbhits 0 time 2 pv g8f6 d2d3 b8c6 b1d2
+stdOut> info depth 4 seldepth 4 multipv 3 score cp -78 nodes 2320 nps 1160000 tbhits 0 time 2 pv h7h6 d2d4 b8c6 b1d2
+stdOut> info depth 4 seldepth 4 multipv 4 score cp -80 nodes 2320 nps 1160000 tbhits 0 time 2 pv d8c7 d2d4 b8c6 b1d2
+stdOut> info depth 5 seldepth 5 multipv 1 score cp -31 nodes 3990 nps 1995000 tbhits 0 time 2 pv g8e7 d2d4 c5d4 f3d4 b8c6
+stdOut> info depth 5 seldepth 5 multipv 2 score cp -37 nodes 3990 nps 1995000 tbhits 0 time 2 pv d8c7 g2g3 g8f6 d2d3
+stdOut> info depth 5 seldepth 5 multipv 3 score cp -38 nodes 3990 nps 1995000 tbhits 0 time 2 pv b8c6 d2d3 g8f6 b1d2 d8c7
+stdOut> info depth 5 seldepth 5 multipv 4 score cp -56 nodes 3990 nps 1995000 tbhits 0 time 2 pv d7d5 e4d5 e6d5 d2d4 b8c6 d1e2 d8e7 d4c5
+stdOut> info depth 6 seldepth 6 multipv 1 score cp 28 nodes 6326 nps 2108666 tbhits 0 time 3 pv b8c6 d2d3 d7d5
+stdOut> info depth 6 seldepth 6 multipv 2 score cp 2 nodes 6326 nps 2108666 tbhits 0 time 3 pv d7d5 e4d5 d8d5 d2d4
+stdOut> info depth 6 seldepth 6 multipv 3 score cp -42 nodes 6326 nps 2108666 tbhits 0 time 3 pv d8c7 d2d4 b8c6 b1d2 d7d5
+stdOut> info depth 6 seldepth 6 multipv 4 score cp -78 nodes 6326 nps 2108666 tbhits 0 time 3 pv h7h6 d2d4 c5d4 c3d4 b8c6 b1d2
+stdOut> info depth 7 seldepth 7 multipv 1 score cp 3 nodes 14501 nps 2900200 tbhits 0 time 5 pv b8c6 d2d3 d7d5 c1g5 d8d6 b1d2 c8d7
+stdOut> info depth 7 seldepth 9 multipv 2 score cp 1 nodes 14501 nps 2900200 tbhits 0 time 5 pv d7d5 d2d4 b8c6 b1d2 g8e7 d4c5 d5e4 d2e4 d8d1 e1d1
+stdOut> info depth 7 seldepth 9 multipv 3 score cp -26 nodes 14501 nps 2900200 tbhits 0 time 5 pv g8f6 e4e5 f6d5 d2d4 c5d4 d1d4
+stdOut> info depth 7 seldepth 12 multipv 4 score cp -63 nodes 14501 nps 2900200 tbhits 0 time 5 pv h7h6 d2d4 c5d4 c3d4 b8c6 b1c3 d7d5
+stdOut> info depth 8 seldepth 10 multipv 1 score cp 29 nodes 35135 nps 3194090 tbhits 0 time 11 pv d7d5 e4d5 d8d5 d2d3 b8c6 b1d2 g8f6
+stdOut> info depth 8 seldepth 12 multipv 2 score cp -9 nodes 35135 nps 3194090 tbhits 0 time 11 pv b8c6 d2d4 c5d4 f3d4 f8e7 d4c6 d7c6 d1d8 e7d8 b1d2
+stdOut> info depth 8 seldepth 14 multipv 3 score cp -22 nodes 35135 nps 3194090 tbhits 0 time 11 pv g8f6 e4e5 f6d5 d2d4 c5d4 d1d4 f8e7
+stdOut> info depth 8 seldepth 13 multipv 4 score cp -45 nodes 35135 nps 3194090 tbhits 0 time 11 pv h7h6 d2d4 g8f6 e4e5 f6d5 d4c5 f8c5
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 "
+stdOut> info depth 9 seldepth 13 multipv 1 score cp -7 nodes 92384 nps 3185655 tbhits 0 time 29 pv b8c6 d2d4 d7d5 b1d2 c5d4 f3d4 d8d6 f1b5 g8f6
+stdOut> info depth 9 seldepth 13 multipv 2 score cp -15 nodes 92384 nps 3185655 tbhits 0 time 29 pv g8f6 e4e5 f6d5 d2d4 c5d4 c3d4 f8b4 c1d2 b4d2 b1d2 e8g8 f1e2
+stdOut> info depth 9 seldepth 13 multipv 3 score cp -24 nodes 92384 nps 3185655 tbhits 0 time 29 pv d7d5 f1b5 c8d7 b5d7 d8d7 e4d5 d7d5 e1g1 b8c6 d2d3 a8c8
+stdOut> info depth 9 seldepth 13 multipv 4 score cp -38 nodes 92384 nps 3185655 tbhits 0 time 29 pv g8e7 d2d4 c5d4 c3d4 d7d5 b1c3 b8c6 e4e5 c8d7 c3b5 e7g6
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 "
+stdOut> info depth 10 seldepth 19 multipv 1 score cp -17 nodes 205590 nps 3544655 tbhits 0 time 58 pv d7d5 e4e5 b8c6 d2d4 d8c7 b1d2 c8d7 f1d3 c5d4 c3d4 a8d8
+stdOut> info depth 10 seldepth 21 multipv 2 score cp -38 nodes 205590 nps 3544655 tbhits 0 time 58 pv g8e7 d2d4 c5d4 c3d4 d7d5 b1c3 b8c6 e4e5 c8d7 c3b5
+stdOut> info depth 10 seldepth 19 multipv 3 score cp -41 nodes 205590 nps 3544655 tbhits 0 time 58 pv b8c6 f1e2 g8f6 e4e5 f6d5 d2d4 c5d4 e1g1 d7d6 c3d4 d6e5 d4e5 c8d7
+stdOut> info depth 10 seldepth 20 multipv 4 score cp -49 nodes 205590 nps 3544655 tbhits 0 time 58 pv f8e7 f1e2 b8c6 e1g1 d7d5 e4d5 e6d5 d2d4 g8f6 d4c5 e8g8 b2b4 c8f5
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 "
+stdOut> info depth 11 seldepth 23 multipv 1 score cp -16 nodes 325214 nps 3695613 tbhits 0 time 88 pv b8c6 f1e2 g8f6 e4e5 f6d5 d2d4 c5d4 c3d4 d7d6 e1g1 d6e5 f3e5 f8e7 b1c3 e8g8 e2d3 c6e5 d4e5
+stdOut> info depth 11 seldepth 16 multipv 2 score cp -42 nodes 325214 nps 3695613 tbhits 0 time 88 pv d7d5 e4d5 d8d5 f1e2 e6e5 d2d4 c5d4 c3d4 e5d4 f3d4 b8c6 d4c6 d5d1 e2d1
+stdOut> info depth 11 seldepth 16 multipv 3 score cp -45 nodes 325214 nps 3695613 tbhits 0 time 88 pv g8e7 d2d4 c5d4 c3d4 d7d5 b1c3 b8c6 f1d3 d5e4 d3e4 e7d5 e1g1 f8e7 e4d5 e6d5
+stdOut> info depth 11 seldepth 20 multipv 4 score cp -51 nodes 325214 nps 3695613 tbhits 0 time 88 pv f8e7 f1e2 b8c6 e1g1 d7d5 e4e5 c8d7 d2d4 d8b6 f1e1 a8d8 e1f1 b6c7 b1d2 c5d4 c3d4
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 "
+userStdOut> stop
+instruction> stop
+stdOut> info depth 12 seldepth 23 multipv 1 score cp -5 nodes 418724 nps 3705522 tbhits 0 time 113 pv b8c6 f1e2 g8f6 e4e5 f6d5 e1g1 d7d6 d2d4 c5d4 c3d4 d6e5 d4e5 f8e7 b1c3
+stdOut> info depth 12 seldepth 22 multipv 2 score cp -31 nodes 418724 nps 3705522 tbhits 0 time 113 pv d7d5
+stdOut> info depth 11 seldepth 16 multipv 3 score cp -45 nodes 418724 nps 3705522 tbhits 0 time 113 pv g8e7 d2d4 c5d4 c3d4 d7d5 b1c3 b8c6 f1d3 d5e4 d3e4 e7d5 e1g1 f8e7 e4d5 e6d5
+stdOut> info depth 11 seldepth 20 multipv 4 score cp -51 nodes 418724 nps 3705522 tbhits 0 time 113 pv f8e7 f1e2 b8c6 e1g1 d7d5 e4e5 c8d7 d2d4 d8b6 f1e1 a8d8 e1f1 b6c7 b1d2 c5d4 c3d4
+stdOut> bestmove b8c6 ponder f1e2
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+stdOut> info depth 1 seldepth 1 multipv 1 score cp 31 nodes 179 nps 179000 tbhits 0 time 1 pv e4d5
+stdOut> info depth 1 seldepth 1 multipv 2 score cp 31 nodes 179 nps 179000 tbhits 0 time 1 pv d2d4
+stdOut> info depth 1 seldepth 1 multipv 3 score cp 0 nodes 179 nps 179000 tbhits 0 time 1 pv e4e5 b8c6 d2d4
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -19 nodes 179 nps 179000 tbhits 0 time 1 pv d2d3
+stdOut> info depth 2 seldepth 2 multipv 1 score cp 31 nodes 622 nps 622000 tbhits 0 time 1 pv e4d5 e6d5 d2d4
+stdOut> info depth 2 seldepth 2 multipv 2 score cp 31 nodes 622 nps 622000 tbhits 0 time 1 pv d2d4 d5e4
+stdOut> info depth 2 seldepth 2 multipv 3 score cp 0 nodes 622 nps 622000 tbhits 0 time 1 pv e4e5 b8c6 d2d4
+stdOut> info depth 2 seldepth 2 multipv 4 score cp -19 nodes 622 nps 622000 tbhits 0 time 1 pv d2d3 d5e4
+stdOut> info depth 3 seldepth 3 multipv 1 score cp 31 nodes 1374 nps 1374000 tbhits 0 time 1 pv e4d5 e6d5 d2d4
+stdOut> info depth 3 seldepth 3 multipv 2 score cp 0 nodes 1374 nps 1374000 tbhits 0 time 1 pv e4e5 b8c6 d2d4 g8e7
+stdOut> info depth 3 seldepth 3 multipv 3 score cp -50 nodes 1374 nps 1374000 tbhits 0 time 1 pv d2d3 b8c6 e4d5
+stdOut> info depth 3 seldepth 3 multipv 4 score cp -55 nodes 1374 nps 1374000 tbhits 0 time 1 pv f3e5 b8c6 e5c6 b7c6 d2d3
+stdOut> info depth 4 seldepth 4 multipv 1 score cp 31 nodes 1830 nps 1830000 tbhits 0 time 1 pv e4d5 e6d5 d2d4 b8c6
+stdOut> info depth 4 seldepth 4 multipv 2 score cp 0 nodes 1830 nps 1830000 tbhits 0 time 1 pv e4e5 b8c6 d2d4 g8e7
+stdOut> info depth 4 seldepth 4 multipv 3 score cp -50 nodes 1830 nps 1830000 tbhits 0 time 1 pv d2d3 b8c6 e4d5 e6d5
+stdOut> info depth 4 seldepth 4 multipv 4 score cp -55 nodes 1830 nps 1830000 tbhits 0 time 1 pv f3e5 b8c6 e5c6 b7c6 d2d3
+stdOut> info depth 5 seldepth 5 multipv 1 score cp 20 nodes 2837 nps 2837000 tbhits 0 time 1 pv e4d5 e6d5 d2d4 b8c6 f1b5
+stdOut> info depth 5 seldepth 5 multipv 2 score cp 0 nodes 2837 nps 2837000 tbhits 0 time 1 pv e4e5 b8c6 d2d4 g8e7 f1e2
+stdOut> info depth 5 seldepth 6 multipv 3 score cp -55 nodes 2837 nps 2837000 tbhits 0 time 1 pv f3e5 b8c6 e5c6 b7c6 d2d3 d5e4
+stdOut> info depth 5 seldepth 6 multipv 4 score cp -56 nodes 2837 nps 2837000 tbhits 0 time 1 pv d2d3 d5e4 d3e4 d8d1 e1d1 b8c6
+stdOut> info depth 6 seldepth 6 multipv 1 score cp 20 nodes 4574 nps 4574000 tbhits 0 time 1 pv e4d5 e6d5 d2d4 b8c6 f1b5 g8f6
+stdOut> info depth 6 seldepth 6 multipv 2 score cp 0 nodes 4574 nps 4574000 tbhits 0 time 1 pv e4e5 b8c6 d2d4 g8e7 f1e2 e7g6
+stdOut> info depth 6 seldepth 8 multipv 3 score cp -20 nodes 4574 nps 4574000 tbhits 0 time 1 pv f1b5 c8d7 b5d7 b8d7 e4d5 g8f6 d5e6 f7e6
+stdOut> info depth 6 seldepth 7 multipv 4 score cp -48 nodes 4574 nps 4574000 tbhits 0 time 1 pv d2d3 d5e4 d3e4 d8d1 e1d1 b8c6
+stdOut> info depth 7 seldepth 11 multipv 1 score cp 19 nodes 7108 nps 3554000 tbhits 0 time 2 pv e4d5 e6d5 f1b5 b8c6 e1g1 f8e7 d2d4 g8f6 d4c5 e8g8 b2b4 c8g4
+stdOut> info depth 7 seldepth 11 multipv 2 score cp 17 nodes 7108 nps 3554000 tbhits 0 time 2 pv e4e5 b8c6 d2d4 g8e7 f1e2 e7g6
+stdOut> info depth 7 seldepth 11 multipv 3 score cp 10 nodes 7108 nps 3554000 tbhits 0 time 2 pv f1b5 c8d7 b5d7 d8d7 e4d5 d7d5 e1g1 b8c6
+stdOut> info depth 7 seldepth 8 multipv 4 score cp -38 nodes 7108 nps 3554000 tbhits 0 time 2 pv d2d3 d5e4 d3e4 d8d1 e1d1 b8c6 b1d2
+stdOut> info depth 8 seldepth 11 multipv 1 score cp 53 nodes 16545 nps 3309000 tbhits 0 time 5 pv e4d5 d8d5 f1e2 g8f6 d2d4 b8c6
+stdOut> info depth 8 seldepth 12 multipv 2 score cp 20 nodes 16545 nps 3309000 tbhits 0 time 5 pv f1b5 c8d7 b5d7 d8d7 e4e5 b8c6 e1g1 d5d4 c3d4 c6d4 d2d3 f8e7
+stdOut> info depth 8 seldepth 15 multipv 3 score cp 0 nodes 16545 nps 3309000 tbhits 0 time 5 pv e4e5 b8c6 d2d4 g8e7 f1e2 e7g6 e1g1 f8e7 e2d3 c8d7 g1h1
+stdOut> info depth 8 seldepth 12 multipv 4 score cp -44 nodes 16545 nps 3309000 tbhits 0 time 5 pv f3e5 b8d7 e5d7 c8d7 e4d5 e6d5 d2d4 g8f6 d1e2 d8e7 d4c5
+stdOut> info depth 9 seldepth 15 multipv 1 score cp 48 nodes 40259 nps 3659909 tbhits 0 time 11 pv e4d5 e6d5 d2d4 g8f6 f1e2 f8e7 d4c5 e8g8 c1e3 b8c6 b2b4
+stdOut> info depth 9 seldepth 13 multipv 2 score cp 42 nodes 40259 nps 3659909 tbhits 0 time 11 pv f1b5 b8c6 e4d5 d8d5 d2d3 f8e7 e1g1 a7a6 b5c4 d5h5 d3d4
+stdOut> info depth 9 seldepth 14 multipv 3 score cp 39 nodes 40259 nps 3659909 tbhits 0 time 11 pv e4e5 b8c6 d2d4 g8e7 f1e2 c5d4 c3d4
+stdOut> info depth 9 seldepth 14 multipv 4 score cp -25 nodes 40259 nps 3659909 tbhits 0 time 11 pv f3e5 b8d7 e5d7 c8d7 d2d3 d5e4 d3e4 d7c6 b1d2
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 "
+stdOut> info depth 10 seldepth 13 multipv 1 score cp 53 nodes 158635 nps 3689186 tbhits 0 time 43 pv e4d5 e6d5 d2d4 g8f6 d1e2 d8e7 d4c5 e7e2 f1e2 f8c5 b2b4 c5b6
+stdOut> info depth 10 seldepth 17 multipv 2 score cp 40 nodes 158635 nps 3689186 tbhits 0 time 43 pv e4e5 b8c6 d2d4 g8e7 f1e2 e7g6 e1g1 c8d7 c1e3 d8b6 d1d2 c5d4 e3d4 c6d4
+stdOut> info depth 10 seldepth 14 multipv 3 score cp 38 nodes 158635 nps 3689186 tbhits 0 time 43 pv f3e5 b8d7 f1b5 f8d6 d2d4 d6e5 d4e5 a7a6
+stdOut> info depth 10 seldepth 20 multipv 4 score cp 31 nodes 158635 nps 3689186 tbhits 0 time 43 pv f1b5 c8d7 b5d7 d8d7 e4e5 d5d4 d2d3 g8e7 b1d2 b8c6 c3d4 c5d4 d2e4 e7g6
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 "
+stdOut> info depth 11 seldepth 17 multipv 1 score cp 74 nodes 235522 nps 3738444 tbhits 0 time 63 pv e4d5 d8d5 f1b5 c8d7 b5e2 d7c6 c3c4 d5d6 e1g1 b8d7 d2d4
+stdOut> info depth 11 seldepth 17 multipv 2 score cp 51 nodes 235522 nps 3738444 tbhits 0 time 63 pv e4e5 b8c6 d2d4 c8d7 f1e2 c5d4 c3d4 g8e7 e1g1 e7f5 c1e3 f8e7 b1c3 e8g8 e2d3 f5e3
+stdOut> info depth 11 seldepth 20 multipv 3 score cp 49 nodes 235522 nps 3738444 tbhits 0 time 63 pv f1b5 c8d7 b5d7 d8d7 e4d5 g8f6 c3c4 e6d5 e1g1 f8e7 f3e5 d7c7 f1e1 b8c6 e5c6 b7c6
+stdOut> info depth 11 seldepth 16 multipv 4 score cp -4 nodes 235522 nps 3738444 tbhits 0 time 63 pv f3e5 d8c7 d2d4 b8c6 f1b5 d5e4 b1d2 c5d4 c3d4 a7a6 b5c6 b7c6 d2e4
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 h4g5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 h4g5 g1h1 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 h4g5 g1h1 h6h5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 h4g5 g1h1 h6h5 e1e5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 h4g5 g1h1 h6h5 e1e5 g5e5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 h4g5 g1h1 h6h5 e1e5 g5e5 d1d8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 b8c6 h2h3 h7h6 d2b3 c5d6 d3c2 c8e6 c1e3 d6c7 b3d4 e6d7 d4e2 d8e7 d1d3 f8e8 f1e1 a8d8 e2f4 e7d6 f4h5 f6e4 e3f4 d6g6 f4c7 g6h5 c7d8 e8d8 a1d1 d7h3 g2h3 h5h3 f3h2 h3h4 d3f1 d8d6 c2e4 c6e5 e4d5 d6g6 d5g2 h4g5 g1h1 h6h5 e1e5 g5e5 d1d8 "
+userStdOut> chesscom movelist "e2e4 "
+userStdOut> chesscom movelist "e2e4 "
+userStdOut> chesscom movelist "e2e4 c7c5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 "
+stdOut> info depth 12 seldepth 16 multipv 1 score cp 66 nodes 569208 nps 3898684 tbhits 0 time 146 pv e4d5 d8d5 f1b5 c8d7 b5e2 g8f6 d2d4 d5d6 b1d2 c5d4 f3d4 b8c6 d2c4
+stdOut> info depth 12 seldepth 22 multipv 2 score cp 26 nodes 569208 nps 3898684 tbhits 0 time 146 pv e4e5 g8e7 d2d4 b8c6 f1e2 c8d7 e1g1 e7g6 b1a3 f8e7 a3b5 e8g8 e2d3 c5c4 d3g6 h7g6 b5d6
+stdOut> info depth 12 seldepth 23 multipv 3 score cp 24 nodes 569208 nps 3898684 tbhits 0 time 146 pv f1b5 c8d7 b5d7 d8d7 e4d5 d7d5 e1g1 b8c6 d2d4 g8f6 c1g5 f8e7 d4c5 a8d8 d1d5 f6d5 g5e7 e8e7
+stdOut> info depth 12 seldepth 20 multipv 4 score cp 11 nodes 569208 nps 3898684 tbhits 0 time 146 pv d2d3 d5e4 d3e4 d8d1 e1d1 g8f6 f1d3 c5c4 d3c4 f6e4 c1e3 e4d6 b1d2 d6c4 d2c4
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 "
+stdOut> info depth 13 seldepth 18 multipv 1 score cp 62 nodes 833750 nps 3932783 tbhits 0 time 212 pv e4d5 e6d5 f1b5 c8d7 b5d7 b8d7 e1g1 f8d6 b1a3 g8e7 a3b5 d6b8 d2d4 e8g8 d4c5 d7c5
+stdOut> info depth 13 seldepth 19 multipv 2 score cp 40 nodes 833750 nps 3932783 tbhits 0 time 212 pv f1b5 c8d7 b5d7 d8d7 e4d5 d7d5 e1g1 g8f6 d2d4 b8c6 c1e3 f8e7 d4c5 e8g8 d1d5 f6d5
+stdOut> info depth 13 seldepth 16 multipv 3 score cp 28 nodes 833750 nps 3932783 tbhits 0 time 212 pv e4e5 g8e7 d2d4 b8c6 f1d3 c5c4 d3e2 e7g6 e1g1 f8e7 b2b4 e8g8 c1e3 a7a6 b1d2 c8d7
+stdOut> info depth 13 seldepth 22 multipv 4 score cp 11 nodes 833750 nps 3932783 tbhits 0 time 212 pv d2d3 d5e4 d3e4 d8d1 e1d1 g8f6 f1d3 c8d7 d1e2 d7c6 c1e3 c5c4 d3c4 f6e4 b1d2 e4d6
+userStdOut> stop
+instruction> stop
+stdOut> info depth 14 seldepth 18 multipv 1 score cp 62 nodes 857443 nps 3915264 tbhits 0 time 219 pv e4d5 e6d5 f1b5 c8d7 b5d7 b8d7 e1g1 f8d6 b1a3 g8e7 a3b5 d6b8 d2d4 e8g8 d4c5 d7c5
+stdOut> info depth 13 seldepth 19 multipv 2 score cp 40 nodes 857443 nps 3915264 tbhits 0 time 219 pv f1b5 c8d7 b5d7 d8d7 e4d5 d7d5 e1g1 g8f6 d2d4 b8c6 c1e3 f8e7 d4c5 e8g8 d1d5 f6d5
+stdOut> info depth 13 seldepth 16 multipv 3 score cp 28 nodes 857443 nps 3915264 tbhits 0 time 219 pv e4e5 g8e7 d2d4 b8c6 f1d3 c5c4 d3e2 e7g6 e1g1 f8e7 b2b4 e8g8 c1e3 a7a6 b1d2 c8d7
+stdOut> info depth 13 seldepth 22 multipv 4 score cp 11 nodes 857443 nps 3915264 tbhits 0 time 219 pv d2d3 d5e4 d3e4 d8d1 e1d1 g8f6 f1d3 c8d7 d1e2 d7c6 c1e3 c5c4 d3c4 f6e4 b1d2 e4d6
+stdOut> bestmove e4d5 ponder e6d5
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+stdOut> info depth 1 seldepth 1 multipv 1 score cp -69 nodes 368 nps 368000 tbhits 0 time 1 pv e6d5
+stdOut> info depth 1 seldepth 1 multipv 2 score cp -88 nodes 368 nps 368000 tbhits 0 time 1 pv d8d5 f1e2
+stdOut> info depth 1 seldepth 1 multipv 3 score cp -128 nodes 368 nps 368000 tbhits 0 time 1 pv d8d7
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -138 nodes 368 nps 368000 tbhits 0 time 1 pv d8b6
+stdOut> info depth 2 seldepth 3 multipv 1 score cp -69 nodes 865 nps 865000 tbhits 0 time 1 pv e6d5 f1b5 c8d7
+stdOut> info depth 2 seldepth 2 multipv 2 score cp -88 nodes 865 nps 865000 tbhits 0 time 1 pv d8d5 f1e2
+stdOut> info depth 2 seldepth 2 multipv 3 score cp -95 nodes 865 nps 865000 tbhits 0 time 1 pv d8d7 d5e6 d7e6 f1e2
+stdOut> info depth 2 seldepth 2 multipv 4 score cp -141 nodes 865 nps 865000 tbhits 0 time 1 pv d8b6 d2d4 e6d5 d4c5 b6c5
+stdOut> info depth 3 seldepth 5 multipv 1 score cp -56 nodes 1600 nps 1600000 tbhits 0 time 1 pv e6d5 d2d4 g8f6
+stdOut> info depth 3 seldepth 3 multipv 2 score cp -89 nodes 1600 nps 1600000 tbhits 0 time 1 pv d8d5 f1e2 e6e5 d2d4 c5d4
+stdOut> info depth 3 seldepth 3 multipv 3 score cp -138 nodes 1600 nps 1600000 tbhits 0 time 1 pv g8f6 d5e6 c8e6
+stdOut> info depth 3 seldepth 3 multipv 4 score cp -141 nodes 1600 nps 1600000 tbhits 0 time 1 pv d8b6 d2d4 e6d5 d4c5
+stdOut> info depth 4 seldepth 5 multipv 1 score cp -56 nodes 2506 nps 2506000 tbhits 0 time 1 pv e6d5 d2d4 g8f6 f1b5 c8d7
+stdOut> info depth 4 seldepth 5 multipv 2 score cp -57 nodes 2506 nps 2506000 tbhits 0 time 1 pv g8f6 f1b5 c8d7 b5d7 b8d7 d5e6
+stdOut> info depth 4 seldepth 4 multipv 3 score cp -89 nodes 2506 nps 2506000 tbhits 0 time 1 pv d8d5 f1e2 e6e5 d2d4
+stdOut> info depth 4 seldepth 5 multipv 4 score cp -166 nodes 2506 nps 2506000 tbhits 0 time 1 pv d8b6 b1a3 e6d5 d2d4
+stdOut> info depth 5 seldepth 7 multipv 1 score cp -56 nodes 4761 nps 2380500 tbhits 0 time 2 pv e6d5 d2d4 g8f6 f1b5 c8d7 d1e2 f8e7
+stdOut> info depth 5 seldepth 7 multipv 2 score cp -89 nodes 4761 nps 2380500 tbhits 0 time 2 pv d8d5 f1e2 g8f6 d2d4 b8c6
+stdOut> info depth 5 seldepth 7 multipv 3 score cp -130 nodes 4761 nps 2380500 tbhits 0 time 2 pv g8f6 f1b5 c8d7 b5d7 b8d7 d5e6 f7e6 d2d4 c5d4
+stdOut> info depth 5 seldepth 5 multipv 4 score cp -153 nodes 4761 nps 2380500 tbhits 0 time 2 pv d8b6 b1a3 e6d5 d2d4 g8f6
+stdOut> info depth 6 seldepth 9 multipv 1 score cp -72 nodes 6959 nps 3479500 tbhits 0 time 2 pv e6d5 d2d4 g8f6 f1b5 c8d7 b5d7 b8d7 e1g1 f8e7
+stdOut> info depth 6 seldepth 6 multipv 2 score cp -89 nodes 6959 nps 3479500 tbhits 0 time 2 pv d8d5 f1e2 g8f6 d2d4 c5d4 c3d4
+stdOut> info depth 6 seldepth 8 multipv 3 score cp -114 nodes 6959 nps 3479500 tbhits 0 time 2 pv g8f6 f1b5 c8d7 b5d7 b8d7 d5e6
+stdOut> info depth 6 seldepth 10 multipv 4 score cp -120 nodes 6959 nps 3479500 tbhits 0 time 2 pv d8e7 f1b5 c8d7 b5d7 e7d7 e1g1 d7d5 f1e1
+stdOut> info depth 7 seldepth 10 multipv 1 score cp -56 nodes 14332 nps 3583000 tbhits 0 time 4 pv e6d5 d2d4 g8f6 f1b5 c8d7 b5d7 b8d7 e1g1 f8e7
+stdOut> info depth 7 seldepth 9 multipv 2 score cp -63 nodes 14332 nps 3583000 tbhits 0 time 4 pv g8f6 f1b5 c8d7 b5d7 d8d7 c3c4 e6d5 e1g1 f8e7 f3e5
+stdOut> info depth 7 seldepth 10 multipv 3 score cp -89 nodes 14332 nps 3583000 tbhits 0 time 4 pv d8d5 f1e2 g8f6 d2d4 b8c6 e1g1 f8e7 d4c5 d5d1
+stdOut> info depth 7 seldepth 10 multipv 4 score cp -92 nodes 14332 nps 3583000 tbhits 0 time 4 pv d8d6 d5e6 c8e6 d2d4 b8c6
+stdOut> info depth 8 seldepth 15 multipv 1 score cp -54 nodes 24545 nps 3506428 tbhits 0 time 7 pv g8f6 d2d4 e6d5 f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5 d7c5 f1e1 e8g8 c1e3 c5e4
+stdOut> info depth 8 seldepth 16 multipv 2 score cp -56 nodes 24545 nps 3506428 tbhits 0 time 7 pv e6d5 d2d4 g8f6 f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5
+stdOut> info depth 8 seldepth 13 multipv 3 score cp -89 nodes 24545 nps 3506428 tbhits 0 time 7 pv d8d5 f1e2 e6e5 d2d4 c5d4 c3d4 e5d4 f3d4 b8c6 d4c6 d5d1 e2d1 b7c6
+stdOut> info depth 8 seldepth 10 multipv 4 score cp -93 nodes 24545 nps 3506428 tbhits 0 time 7 pv d8d6 f1e2 e6d5 d2d4 c5c4 b2b3 d6e6 e1g1 b8c6 b3c4
+stdOut> info depth 9 seldepth 18 multipv 1 score cp -52 nodes 45063 nps 3755250 tbhits 0 time 12 pv g8f6 d5e6 c8e6 f1b5 b8c6 d2d4 f8e7 b5c6 b7c6 e1g1 e8g8 f1e1
+stdOut> info depth 9 seldepth 13 multipv 2 score cp -73 nodes 45063 nps 3755250 tbhits 0 time 12 pv e6d5 f1b5 c8d7 b5d7 b8d7 e1g1 f8d6 d2d4 g8e7 b1d2 e8g8 d4c5 d7c5
+stdOut> info depth 9 seldepth 13 multipv 3 score cp -85 nodes 45063 nps 3755250 tbhits 0 time 12 pv a7a6 f1e2 d8d5 e1g1 b8c6 d2d4 f8e7 d4c5 e7c5 c1e3 d5d1
+stdOut> info depth 9 seldepth 13 multipv 4 score cp -89 nodes 45063 nps 3755250 tbhits 0 time 12 pv d8d5 f1e2 e6e5 d2d4 c5d4 c3d4 e5d4 f3d4 b8c6 d4c6 d5d1 e2d1 b7c6
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 "
+stdOut> info depth 10 seldepth 17 multipv 1 score cp -31 nodes 109593 nps 3653100 tbhits 0 time 30 pv g8f6 d2d4 e6d5 f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 f1e1 e8g8 c1f4 f8e8 b1d2 f6e4 f4e3 c5c4
+stdOut> info depth 10 seldepth 17 multipv 2 score cp -40 nodes 109593 nps 3653100 tbhits 0 time 30 pv e6d5 f1b5 c8d7 b5d7 b8d7 e1g1 f8d6 b1a3 g8e7 d2d4 c5c4 b2b3 d8a5 b3b4 a5d8
+stdOut> info depth 10 seldepth 14 multipv 3 score cp -71 nodes 109593 nps 3653100 tbhits 0 time 30 pv d8d5 f1e2 g8f6 d2d4 b8c6 e1g1 f8e7 d4c5 a7a6 b1d2 d5c5 d2b3 c5d6
+stdOut> info depth 10 seldepth 15 multipv 4 score cp -72 nodes 109593 nps 3653100 tbhits 0 time 30 pv a7a6 d5e6 c8e6 f1e2 f8e7 b1a3 b8c6 d2d4
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 "
+stdOut> info depth 11 seldepth 20 multipv 1 score cp -30 nodes 185235 nps 3704700 tbhits 0 time 50 pv g8f6 d5e6 c8e6 f1b5 b8c6 e1g1 f8d6 f3g5 e8g8 g5e6 f7e6 d2d3
+stdOut> info depth 11 seldepth 19 multipv 2 score cp -41 nodes 185235 nps 3704700 tbhits 0 time 50 pv e6d5 f1b5 c8d7 b5d7 b8d7 e1g1 f8d6 d2d4 g8e7 d4c5 d7c5 c1e3 d8d7 e3c5 d6c5
+stdOut> info depth 11 seldepth 16 multipv 3 score cp -51 nodes 185235 nps 3704700 tbhits 0 time 50 pv d8d5 f1e2 g8f6 d2d4 b8c6 e1g1 f8e7 d4c5 e7c5 b2b4 c5d6 b1d2 e8g8 a2a4 c6e7 a4a5
+stdOut> info depth 11 seldepth 18 multipv 4 score cp -76 nodes 185235 nps 3704700 tbhits 0 time 50 pv a7a6 d5e6 c8e6 d2d4 b8c6 f1e2 c5d4 e1g1 d4d3 e2d3 d8d5 d3e2 g8f6 d1d5 e6d5
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 "
+stdOut> info depth 12 seldepth 23 multipv 1 score cp -19 nodes 400545 nps 3778726 tbhits 0 time 106 pv e6d5 d2d4 g8f6 c1e3 c5c4 b2b3 f8e7 b1d2 e8g8 b3c4 b8c6
+stdOut> info depth 12 seldepth 19 multipv 2 score cp -34 nodes 400545 nps 3778726 tbhits 0 time 106 pv g8f6 d5e6 c8e6 f1e2 b8c6 e1g1 f8e7 b1a3 e8g8 a3c2 d8c7 f1e1 f6e4 d2d3 e4f6
+stdOut> info depth 12 seldepth 22 multipv 3 score cp -61 nodes 400545 nps 3778726 tbhits 0 time 106 pv d8d5 f1e2 g8f6 d2d4 b8c6 e1g1 f8e7 d4c5 e8g8 b2b4 d5f5 c1e3 f6e4 d1c1 e7f6 f3d2 c6e5
+stdOut> info depth 12 seldepth 23 multipv 4 score cp -92 nodes 400545 nps 3778726 tbhits 0 time 106 pv a7a6 d5e6 c8e6 f1e2 b8c6 e1g1 f8d6 d2d4 g8f6 c3c4 c5d4 f3d4 e8g8 d4e6 f7e6 b1c3
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 "
+stdOut> info depth 13 seldepth 21 multipv 1 score cp 6 nodes 677541 nps 3806410 tbhits 0 time 178 pv e6d5 d2d4 g8f6 f1e2 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 c5d6 d2b3 f8e8 b3d4 b8c6
+stdOut> info depth 13 seldepth 23 multipv 2 score cp -27 nodes 677541 nps 3806410 tbhits 0 time 178 pv g8f6 d5e6 c8e6 f1e2 b8c6 d2d4 f8e7 d4c5 d8d1 e2d1 e7c5 e1g1 e8g8 d1c2 f8d8 b1d2 a8c8 f1e1 c5d6 d2e4 f6e4 c2e4
+stdOut> info depth 13 seldepth 20 multipv 3 score cp -35 nodes 677541 nps 3806410 tbhits 0 time 178 pv d8d5 f1e2 b8c6 d2d4 c5d4 f3d4 g8f6 e1g1 d5d7 c1f4 f8e7 d4c6 b7c6 e2c4 d7d1
+stdOut> info depth 13 seldepth 21 multipv 4 score cp -76 nodes 677541 nps 3806410 tbhits 0 time 178 pv a7a6 d5e6 c8e6 f1e2 b8c6 e1g1 f8e7 d2d3 g8f6 c1f4 e8g8 b1d2 f8e8 f3e5
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 "
+userStdOut> stop
+instruction> stop
+stdOut> info depth 14 seldepth 21 multipv 1 score cp 6 nodes 776464 nps 3806196 tbhits 0 time 204 pv e6d5 d2d4 g8f6 f1e2 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 c5d6 d2b3 f8e8 b3d4 b8c6
+stdOut> info depth 13 seldepth 23 multipv 2 score cp -27 nodes 776464 nps 3806196 tbhits 0 time 204 pv g8f6 d5e6 c8e6 f1e2 b8c6 d2d4 f8e7 d4c5 d8d1 e2d1 e7c5 e1g1 e8g8 d1c2 f8d8 b1d2 a8c8 f1e1 c5d6 d2e4 f6e4 c2e4
+stdOut> info depth 13 seldepth 20 multipv 3 score cp -35 nodes 776464 nps 3806196 tbhits 0 time 204 pv d8d5 f1e2 b8c6 d2d4 c5d4 f3d4 g8f6 e1g1 d5d7 c1f4 f8e7 d4c6 b7c6 e2c4 d7d1
+stdOut> info depth 13 seldepth 21 multipv 4 score cp -76 nodes 776464 nps 3806196 tbhits 0 time 204 pv a7a6 d5e6 c8e6 f1e2 b8c6 e1g1 f8e7 d2d3 g8f6 c1f4 e8g8 b1d2 f8e8 f3e5
+stdOut> bestmove e6d5 ponder d2d4
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 "
+stdOut> info depth 1 seldepth 2 multipv 1 score cp 0 nodes 292 nps 146000 tbhits 0 time 2 pv f1b5 b8c6
+stdOut> info depth 1 seldepth 2 multipv 2 score cp -4 nodes 292 nps 146000 tbhits 0 time 2 pv d1e2 f8e7
+stdOut> info depth 1 seldepth 1 multipv 3 score cp -16 nodes 292 nps 146000 tbhits 0 time 2 pv d2d4
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -16 nodes 292 nps 146000 tbhits 0 time 2 pv f1e2
+stdOut> info depth 2 seldepth 4 multipv 1 score cp 0 nodes 721 nps 360500 tbhits 0 time 2 pv f1b5 b8c6 e1g1 f8e7
+stdOut> info depth 2 seldepth 3 multipv 2 score cp -16 nodes 721 nps 360500 tbhits 0 time 2 pv d2d4 g8f6
+stdOut> info depth 2 seldepth 3 multipv 3 score cp -16 nodes 721 nps 360500 tbhits 0 time 2 pv d1e2 f8e7 d2d4
+stdOut> info depth 2 seldepth 2 multipv 4 score cp -16 nodes 721 nps 360500 tbhits 0 time 2 pv f1e2 d5d4
+stdOut> info depth 3 seldepth 5 multipv 1 score cp 0 nodes 1099 nps 549500 tbhits 0 time 2 pv f1b5 b8c6 e1g1 f8e7 d2d4
+stdOut> info depth 3 seldepth 3 multipv 2 score cp -16 nodes 1099 nps 549500 tbhits 0 time 2 pv d2d4 g8f6 f1e2
+stdOut> info depth 3 seldepth 4 multipv 3 score cp -16 nodes 1099 nps 549500 tbhits 0 time 2 pv d1e2 f8e7 d2d4 g8f6
+stdOut> info depth 3 seldepth 4 multipv 4 score cp -16 nodes 1099 nps 549500 tbhits 0 time 2 pv f1e2 d5d4 e2b5 b8c6
+stdOut> info depth 4 seldepth 6 multipv 1 score cp 92 nodes 1735 nps 867500 tbhits 0 time 2 pv f1e2
+stdOut> info depth 4 seldepth 6 multipv 2 score cp 59 nodes 1735 nps 867500 tbhits 0 time 2 pv f1b5 b8c6 e1g1 f8e7 d2d4
+stdOut> info depth 4 seldepth 4 multipv 3 score cp -16 nodes 1735 nps 867500 tbhits 0 time 2 pv d2d4 g8f6 f1e2 f8e7
+stdOut> info depth 4 seldepth 5 multipv 4 score cp -19 nodes 1735 nps 867500 tbhits 0 time 2 pv b1a3 b8c6 d1e2 f8e7 a3b5
+stdOut> info depth 5 seldepth 6 multipv 1 score cp 38 nodes 3116 nps 1558000 tbhits 0 time 2 pv d1e2 g8e7 d2d4 c5c4
+stdOut> info depth 5 seldepth 7 multipv 2 score cp 24 nodes 3116 nps 1558000 tbhits 0 time 2 pv f1b5 b8c6 e1g1 f8e7 d2d4 a7a6 b5a4
+stdOut> info depth 5 seldepth 7 multipv 3 score cp -16 nodes 3116 nps 1558000 tbhits 0 time 2 pv d2d4 g8f6 f1e2 f8e7 d4c5
+stdOut> info depth 5 seldepth 7 multipv 4 score cp -16 nodes 3116 nps 1558000 tbhits 0 time 2 pv f1e2 d5d4 e2b5 b8c6 e1g1 f8e7 f1e1
+stdOut> info depth 6 seldepth 8 multipv 1 score cp 46 nodes 4546 nps 2273000 tbhits 0 time 2 pv d1e2 d8e7 d2d4 c5d4 f3d4 b8c6 e2e7 f8e7
+stdOut> info depth 6 seldepth 11 multipv 2 score cp 8 nodes 4546 nps 2273000 tbhits 0 time 2 pv f1b5 b8c6 e1g1 f8e7 d2d4 g8f6 c1g5 e8g8 b1d2 c5d4 c3d4
+stdOut> info depth 6 seldepth 6 multipv 3 score cp -16 nodes 4546 nps 2273000 tbhits 0 time 2 pv d2d4 g8f6 f1e2 f8e7 d4c5 e7c5
+stdOut> info depth 6 seldepth 8 multipv 4 score cp -16 nodes 4546 nps 2273000 tbhits 0 time 2 pv f1e2 d5d4 e2b5 b8c6 e1g1 f8e7 f1e1 g8f6
+stdOut> info depth 7 seldepth 13 multipv 1 score cp 31 nodes 11756 nps 2939000 tbhits 0 time 4 pv f1e2 b8c6 d2d4 f8e7 d4c5 e7c5
+stdOut> info depth 7 seldepth 11 multipv 2 score cp 10 nodes 11756 nps 2939000 tbhits 0 time 4 pv f1b5 b8c6 e1g1 f8e7 d2d4 g8f6 d4c5 e8g8 b2b4 f6e4
+stdOut> info depth 7 seldepth 12 multipv 3 score cp -16 nodes 11756 nps 2939000 tbhits 0 time 4 pv d2d4 g8f6 f1e2 f8e7 d4c5 e7c5 e1g1 e8g8 b1d2 c5d6
+stdOut> info depth 7 seldepth 11 multipv 4 score cp -18 nodes 11756 nps 2939000 tbhits 0 time 4 pv d2d3 g8f6 d3d4 c5c4 b1d2 b8c6 f1e2
+stdOut> info depth 8 seldepth 15 multipv 1 score cp 30 nodes 21329 nps 3554833 tbhits 0 time 6 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8d6 d2d4 g8e7 d4c5 d7c5 c3c4 d5c4 b1d2 e8g8 d2c4
+stdOut> info depth 8 seldepth 14 multipv 2 score cp -8 nodes 21329 nps 3554833 tbhits 0 time 6 pv f1e2 g8f6 d2d4 f8e7 d4c5 e7c5 c1g5 e8g8 e1g1 f8e8 b1d2 d8b6 d2b3 c5d6
+stdOut> info depth 8 seldepth 14 multipv 3 score cp -8 nodes 21329 nps 3554833 tbhits 0 time 6 pv d2d4 g8f6 f1e2 f8e7 d4c5 e7c5 c1g5 e8g8 e1g1 f8e8 b1d2 d8b6 d2b3 c5d6
+stdOut> info depth 8 seldepth 16 multipv 4 score cp -14 nodes 21329 nps 3554833 tbhits 0 time 6 pv d2d3 g8f6 d3d4 f8e7 d4c5 e7c5 b2b4 d8e7 d1e2 c5d6
+stdOut> info depth 9 seldepth 22 multipv 1 score cp 36 nodes 53217 nps 3547800 tbhits 0 time 15 pv f1e2 d5d4 e2b5 c8d7 b5d7 d8d7 e1g1 d4d3 f1e1 g8e7 e1e3 b8c6
+stdOut> info depth 9 seldepth 14 multipv 2 score cp 30 nodes 53217 nps 3547800 tbhits 0 time 15 pv b1a3 b8c6 d2d4 c5d4 a3b5 d8e7 f1e2
+stdOut> info depth 9 seldepth 15 multipv 3 score cp 28 nodes 53217 nps 3547800 tbhits 0 time 15 pv f1b5 b8c6 e1g1 f8e7 d2d4 g8f6 d4c5 e8g8 b2b4 d8c7 b5d3 c8g4
+stdOut> info depth 9 seldepth 12 multipv 4 score cp 0 nodes 53217 nps 3547800 tbhits 0 time 15 pv d2d4 g8f6 f1e2 c5c4 b2b3 c4b3 a2b3 b8c6 e1g1 f8d6 b3b4 e8g8
+stdOut> info depth 10 seldepth 21 multipv 1 score cp 53 nodes 117346 nps 3451352 tbhits 0 time 34 pv f1b5 c8d7 d1e2 d8e7 e1g1 e7e2 b5e2 b8c6 d2d4 g8f6 c1e3 f6g4 b1d2 g4e3
+stdOut> info depth 10 seldepth 21 multipv 2 score cp 19 nodes 117346 nps 3451352 tbhits 0 time 34 pv f1e2 g8f6 d2d4 f8e7 d4c5 e7c5 c1g5 e8g8 e1g1 d8b6 g5f6 g7f6
+stdOut> info depth 10 seldepth 17 multipv 3 score cp 17 nodes 117346 nps 3451352 tbhits 0 time 34 pv d2d4 g8f6 f1e2 f8e7 d4c5 e7c5 c1g5 e8g8 e1g1 f8e8 b1d2 b8c6 e2d3 c8g4 f1e1 c5b6 e1e8 d8e8
+stdOut> info depth 10 seldepth 16 multipv 4 score cp 11 nodes 117346 nps 3451352 tbhits 0 time 34 pv b1a3 g8f6 d2d4 b8c6 a3c2 c5c4 f1e2 f8e7 f3e5 e7d6 e5c6 b7c6
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 "
+stdOut> info depth 11 seldepth 13 multipv 1 score cp 49 nodes 201150 nps 3657272 tbhits 0 time 55 pv d2d4 g8f6 f1e2 b8c6 e1g1 c5d4 c3d4 f8d6 b1c3 e8g8 c1g5 f8e8 e2d3
+stdOut> info depth 11 seldepth 20 multipv 2 score cp 48 nodes 201150 nps 3657272 tbhits 0 time 55 pv f1e2 d5d4 e2b5 b8c6 e1g1 f8e7 b2b4 c5b4 f3d4 c8d7 d4c6 b7c6 b5c4 g8f6 d2d4
+stdOut> info depth 11 seldepth 21 multipv 3 score cp 44 nodes 201150 nps 3657272 tbhits 0 time 55 pv f1b5 c8d7 d1e2 d8e7 e1g1 e7e2 b5e2 b8c6 d2d4 c5d4 c1f4 g8f6 f3d4
+stdOut> info depth 11 seldepth 20 multipv 4 score cp 19 nodes 201150 nps 3657272 tbhits 0 time 55 pv b1a3 b8c6 d2d4 g8f6 a3c2 c5c4 f1e2 f8e7 e1g1 e8g8 c1f4 e7d6
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 "
+stdOut> info depth 12 seldepth 24 multipv 1 score cp 57 nodes 449406 nps 3808525 tbhits 0 time 118 pv f1b5 b8c6 f3e5 c8d7 b5c6 b7c6 e1g1 g8f6 d1e2 d7e6 f1e1 d8c7 e5f7 c7f7 e2e6 f7e6 e1e6 e8d7
+stdOut> info depth 12 seldepth 20 multipv 2 score cp 39 nodes 449406 nps 3808525 tbhits 0 time 118 pv f1e2 b8c6 d2d4 g8f6 e1g1 f8e7 c1e3 c5c4 b2b3 c4b3 d1b3 e8g8 b1d2 f8e8 c3c4
+stdOut> info depth 12 seldepth 17 multipv 3 score cp 38 nodes 449406 nps 3808525 tbhits 0 time 118 pv b1a3 b8c6 d2d4 g8f6 f1b5 f8e7 e1g1 e8g8 d4c5 e7c5 b2b4 c5d6 b5d3 f8e8 a3c2
+stdOut> info depth 12 seldepth 20 multipv 4 score cp 29 nodes 449406 nps 3808525 tbhits 0 time 118 pv d2d4 b8c6 f1e2 g8f6 e1g1 f8d6 c1e3 c5c4 b2b3 c4b3 d1b3 e8g8 b1d2 d8e7 a1e1
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 "
+stdOut> info depth 13 seldepth 21 multipv 1 score cp 47 nodes 728176 nps 3873276 tbhits 0 time 188 pv f1e2 g8f6 d2d4 f8e7 d4c5 e7c5 b1a3 b8c6 e1g1 e8g8 a3c2 f8e8 c1e3 c5d6 f1e1 c8f5 e2d3
+stdOut> info depth 13 seldepth 22 multipv 2 score cp 40 nodes 728176 nps 3873276 tbhits 0 time 188 pv f1b5 b8c6 f3e5 d8b6 d1a4 a7a6 b5c6 b7c6 e1g1 f8d6 f1e1 c8e6 e5c6 b6b5 a4b5 a6b5 d2d4 g8e7 c6e7 e8e7 d4c5
+stdOut> info depth 13 seldepth 22 multipv 3 score cp 36 nodes 728176 nps 3873276 tbhits 0 time 188 pv b1a3 b8c6 d2d4 g8f6 c1f4 f8e7 d4c5 e7c5 a3b5 e8g8 f1e2 f8e8 e1g1 a7a6 b5d4 c5d6 f4d6 d8d6 f1e1
+stdOut> info depth 13 seldepth 20 multipv 4 score cp 36 nodes 728176 nps 3873276 tbhits 0 time 188 pv d2d4 g8f6 f1e2 f8e7 d4c5 e7c5 b1a3 e8g8 e1g1 b8c6 a3b5 f8e8 c1f4 a7a6 b5d4 c5d6 f4d6 d8d6 f1e1
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 "
+userStdOut> stop
+instruction> stop
+stdOut> info depth 14 seldepth 21 multipv 1 score cp 47 nodes 790985 nps 3877377 tbhits 0 time 204 pv f1e2 g8f6 d2d4 f8e7 d4c5 e7c5 b1a3 b8c6 e1g1 e8g8 a3c2 f8e8 c1e3 c5d6 f1e1 c8f5 e2d3
+stdOut> info depth 13 seldepth 22 multipv 2 score cp 40 nodes 790985 nps 3877377 tbhits 0 time 204 pv f1b5 b8c6 f3e5 d8b6 d1a4 a7a6 b5c6 b7c6 e1g1 f8d6 f1e1 c8e6 e5c6 b6b5 a4b5 a6b5 d2d4 g8e7 c6e7 e8e7 d4c5
+stdOut> info depth 13 seldepth 22 multipv 3 score cp 36 nodes 790985 nps 3877377 tbhits 0 time 204 pv b1a3 b8c6 d2d4 g8f6 c1f4 f8e7 d4c5 e7c5 a3b5 e8g8 f1e2 f8e8 e1g1 a7a6 b5d4 c5d6 f4d6 d8d6 f1e1
+stdOut> info depth 13 seldepth 20 multipv 4 score cp 36 nodes 790985 nps 3877377 tbhits 0 time 204 pv d2d4 g8f6 f1e2 f8e7 d4c5 e7c5 b1a3 e8g8 e1g1 b8c6 a3b5 f8e8 c1f4 a7a6 b5d4 c5d6 f4d6 d8d6 f1e1
+stdOut> bestmove f1e2 ponder g8f6
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 "
+stdOut> info depth 1 seldepth 1 multipv 1 score cp -36 nodes 448 nps 448000 tbhits 0 time 1 pv g8f6
+stdOut> info depth 1 seldepth 1 multipv 2 score cp -39 nodes 448 nps 448000 tbhits 0 time 1 pv b8c6
+stdOut> info depth 1 seldepth 2 multipv 3 score cp -74 nodes 448 nps 448000 tbhits 0 time 1 pv d8e7 c1e3 c5c4 f1e2
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -98 nodes 448 nps 448000 tbhits 0 time 1 pv c5c4
+stdOut> info depth 2 seldepth 2 multipv 1 score cp -36 nodes 876 nps 876000 tbhits 0 time 1 pv g8f6 f1e2
+stdOut> info depth 2 seldepth 3 multipv 2 score cp -37 nodes 876 nps 876000 tbhits 0 time 1 pv c5c4 b2b3
+stdOut> info depth 2 seldepth 2 multipv 3 score cp -39 nodes 876 nps 876000 tbhits 0 time 1 pv b8c6 f1e2
+stdOut> info depth 2 seldepth 3 multipv 4 score cp -74 nodes 876 nps 876000 tbhits 0 time 1 pv d8e7 c1e3 c5c4
+stdOut> info depth 3 seldepth 3 multipv 1 score cp -36 nodes 1421 nps 710500 tbhits 0 time 2 pv g8f6 f1e2 f8e7
+stdOut> info depth 3 seldepth 3 multipv 2 score cp -46 nodes 1421 nps 710500 tbhits 0 time 2 pv b8c6 f1e2 g8f6
+stdOut> info depth 3 seldepth 3 multipv 3 score cp -67 nodes 1421 nps 710500 tbhits 0 time 2 pv c5c4 b2b3 g8f6
+stdOut> info depth 3 seldepth 5 multipv 4 score cp -107 nodes 1421 nps 710500 tbhits 0 time 2 pv d8e7 f1e2 b8c6 e1g1 c5d4
+stdOut> info depth 4 seldepth 4 multipv 1 score cp -36 nodes 2032 nps 1016000 tbhits 0 time 2 pv g8f6 f1e2 f8e7 d4c5
+stdOut> info depth 4 seldepth 5 multipv 2 score cp -50 nodes 2032 nps 1016000 tbhits 0 time 2 pv b8c6 f1e2 c5d4 e1g1 d4c3
+stdOut> info depth 4 seldepth 4 multipv 3 score cp -67 nodes 2032 nps 1016000 tbhits 0 time 2 pv c5c4 b2b3 g8f6 b3c4
+stdOut> info depth 4 seldepth 6 multipv 4 score cp -107 nodes 2032 nps 1016000 tbhits 0 time 2 pv d8e7 f1e2 b8c6 e1g1 c5d4 f3d4
+stdOut> info depth 5 seldepth 5 multipv 1 score cp -48 nodes 4168 nps 2084000 tbhits 0 time 2 pv g8f6 f1e2 c5c4 b2b3 c4b3
+stdOut> info depth 5 seldepth 6 multipv 2 score cp -50 nodes 4168 nps 2084000 tbhits 0 time 2 pv b8c6 f1e2 c5d4 e1g1 d4c3 b1c3
+stdOut> info depth 5 seldepth 6 multipv 3 score cp -91 nodes 4168 nps 2084000 tbhits 0 time 2 pv a7a6 d4c5 f8c5 d1e2 c5e7 b1a3
+stdOut> info depth 5 seldepth 5 multipv 4 score cp -102 nodes 4168 nps 2084000 tbhits 0 time 2 pv c5c4 b2b3 g8e7 f1e2 c4b3
+stdOut> info depth 6 seldepth 6 multipv 1 score cp -48 nodes 6590 nps 3295000 tbhits 0 time 2 pv g8f6 f1e2 c5c4 b2b3 c4b3 a2b3
+stdOut> info depth 6 seldepth 7 multipv 2 score cp -54 nodes 6590 nps 3295000 tbhits 0 time 2 pv b8c6 f1e2 c5d4 e1g1 f8e7 c3d4 g8f6
+stdOut> info depth 6 seldepth 8 multipv 3 score cp -71 nodes 6590 nps 3295000 tbhits 0 time 2 pv c5c4 b2b3 c4b3 a2b3 b8c6
+stdOut> info depth 6 seldepth 8 multipv 4 score cp -73 nodes 6590 nps 3295000 tbhits 0 time 2 pv a7a6 d1e2 d8e7 c1e3 c5c4
+stdOut> info depth 7 seldepth 11 multipv 1 score cp -49 nodes 9330 nps 3110000 tbhits 0 time 3 pv g8f6 f1e2 b8c6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2 f8e8
+stdOut> info depth 7 seldepth 10 multipv 2 score cp -49 nodes 9330 nps 3110000 tbhits 0 time 3 pv b8c6 f1e2 g8f6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2
+stdOut> info depth 7 seldepth 9 multipv 3 score cp -73 nodes 9330 nps 3110000 tbhits 0 time 3 pv f8e7 d4c5 b8c6 c1e3 e7f6 b1d2 d8e7
+stdOut> info depth 7 seldepth 9 multipv 4 score cp -80 nodes 9330 nps 3110000 tbhits 0 time 3 pv a7a6 f1e2 b8c6 e1g1 g8f6 c1e3 f8e7 d4c5
+stdOut> info depth 8 seldepth 12 multipv 1 score cp -43 nodes 25789 nps 4298166 tbhits 0 time 6 pv b8c6 f1e2 c5d4 f3d4 f8d6 d4b5 g8e7 b5d6 d8d6 e1g1
+stdOut> info depth 8 seldepth 11 multipv 2 score cp -49 nodes 25789 nps 4298166 tbhits 0 time 6 pv g8f6 f1e2 b8c6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2 f8e8
+stdOut> info depth 8 seldepth 10 multipv 3 score cp -81 nodes 25789 nps 4298166 tbhits 0 time 6 pv a7a6 b1a3 b8c6 a3c2 g8f6 f1e2 c5d4 c2d4
+stdOut> info depth 8 seldepth 13 multipv 4 score cp -92 nodes 25789 nps 4298166 tbhits 0 time 6 pv c8d7 f1e2 g8f6 e1g1 f8e7 b1a3 e8g8 d4c5
+stdOut> info depth 9 seldepth 16 multipv 1 score cp -49 nodes 47579 nps 3964916 tbhits 0 time 12 pv g8f6 f1e2 b8c6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2 f8e8 c1e3 c5d6 f1e1 c8d7 h2h3
+stdOut> info depth 9 seldepth 14 multipv 2 score cp -56 nodes 47579 nps 3964916 tbhits 0 time 12 pv b8c6 f1b5 f8e7 e1g1 g8f6 d4c5 e7c5 b2b4 c5e7
+stdOut> info depth 9 seldepth 11 multipv 3 score cp -67 nodes 47579 nps 3964916 tbhits 0 time 12 pv c8d7 d4c5 f8c5 d1d5 d8e7 d5e5 b8c6 e5e7 c5e7
+stdOut> info depth 9 seldepth 14 multipv 4 score cp -73 nodes 47579 nps 3964916 tbhits 0 time 12 pv a7a6 d1e2 d8e7 d4c5 e7e2 f1e2 f8c5 b1a3 g8e7
+stdOut> info depth 10 seldepth 20 multipv 1 score cp -38 nodes 95399 nps 3669192 tbhits 0 time 26 pv g8f6 f1e2 b8c6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2 f8e8 c1e3 c5d6 f1e1
+stdOut> info depth 10 seldepth 18 multipv 2 score cp -44 nodes 95399 nps 3669192 tbhits 0 time 26 pv b8c6 f1b5 f8e7 e1g1 g8f6 d4c5 e7c5 b2b4 c5e7 f3e5 c8d7 b5c6 b7c6
+stdOut> info depth 10 seldepth 18 multipv 3 score cp -52 nodes 95399 nps 3669192 tbhits 0 time 26 pv a7a6 f1e2 b8c6 e1g1 g8f6 f1e1 f8e7 d4c5 e8g8 c1e3 f6e4 b1d2 e7c5 e3c5
+stdOut> info depth 10 seldepth 18 multipv 4 score cp -56 nodes 95399 nps 3669192 tbhits 0 time 26 pv c8d7 f1e2 g8f6 e1g1 f8d6 d4c5 d6c5 b1a3 e8g8 a3c2 b8c6 e2d3 c5d6 c1e3
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 c2c4 "
+stdOut> info depth 11 seldepth 19 multipv 1 score cp -26 nodes 155732 nps 3621674 tbhits 0 time 43 pv b8c6 f1e2 g8f6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 e2d3 d5d4 a3c2 d4c3 b2c3 f8e8 c1e3
+stdOut> info depth 11 seldepth 19 multipv 2 score cp -31 nodes 155732 nps 3621674 tbhits 0 time 43 pv g8f6 b1a3 b8c6 f1b5 f8e7 d4c5 e8g8 c1e3 f6g4 e3d4 c6d4 c3d4
+stdOut> info depth 11 seldepth 16 multipv 3 score cp -43 nodes 155732 nps 3621674 tbhits 0 time 43 pv a7a6 f1d3 c5c4 d3c2 g8f6 e1g1 f8e7 b1d2 e8g8 b2b3 c4b3 d2b3 b8c6 f1e1
+stdOut> info depth 11 seldepth 16 multipv 4 score cp -61 nodes 155732 nps 3621674 tbhits 0 time 43 pv c8d7 f1e2 g8f6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3b5 f8e8 c1f4 d7b5 e2b5 b8c6
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 c2c4 a5a4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 c2c4 a5a4 g3f4 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 c2c4 a5a4 g3f4 a4a3 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 c2c4 a5a4 g3f4 a4a3 b1a1 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 c2c4 a5a4 g3f4 a4a3 b1a1 g7a1 "
+userStdOut> chesscom movelist "e2e4 c7c5 g1f3 d7d6 f1b5 c8d7 a2a4 b8c6 d2d4 c5d4 f3d4 g8f6 b1c3 g7g6 d4f3 f8g7 e1g1 e8g8 a1a3 a7a6 b5e2 d8c7 c1g5 h7h6 g5f6 g7f6 c3d5 c7b8 d5b6 d7e6 b6a8 b8a8 d1d2 f6b2 d2h6 b2a3 f3g5 f8c8 h6h7 g8f8 e2g4 f8e8 g5e6 f7e6 h7g8 e8d7 g8e6 d7c7 e6d7 c7b6 f1b1 b6a7 d7c8 a8c8 g4c8 b7b6 h2h4 c6e5 g2g4 e5f3 g1g2 f3h4 g2g3 g6g5 f2f4 a3c5 f4g5 h4g6 c8f5 g6e5 g5g6 e5g6 f5g6 c5d4 g6f5 d4g7 g4g5 b6b5 a4b5 a6a5 g5g6 a7b6 c2c4 a5a4 g3f4 a4a3 b1a1 g7a1 "
+userStdOut> chesscom movelist "e2e4 "
+userStdOut> chesscom movelist "e2e4 "
+userStdOut> chesscom movelist "e2e4 e7e5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 "
+stdOut> info depth 12 seldepth 19 multipv 1 score cp -5 nodes 434828 nps 3781113 tbhits 0 time 115 pv g8f6 b1a3 b8c6 f1b5 f8d6 d4c5 d6c5 e1g1 e8g8 a3c2 c8d7 c1e3 d8b6
+stdOut> info depth 12 seldepth 20 multipv 2 score cp -12 nodes 434828 nps 3781113 tbhits 0 time 115 pv b8c6 f1e2 g8f6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2 c8d7 c1e3 c5d6 f1e1 c6e5
+stdOut> info depth 12 seldepth 21 multipv 3 score cp -37 nodes 434828 nps 3781113 tbhits 0 time 115 pv f8e7 f1d3 c5c4 d3c2 g8f6 e1g1 c8e6 f3e5 b8c6 d1f3 c6e5 d4e5
+stdOut> info depth 12 seldepth 17 multipv 4 score cp -53 nodes 434828 nps 3781113 tbhits 0 time 115 pv c8d7 f1d3 c5c4 d3c2 g8f6 e1g1 f8e7 f3e5 b8c6 f1e1 e8g8 d1f3 a8c8 h2h3 c6e5 d4e5
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 "
+userStdOut> stop
+instruction> stop
+stdOut> info depth 13 seldepth 22 multipv 1 score cp -2 nodes 784056 nps 3843411 tbhits 0 time 204 pv b8c6 f1d3 c5c4 d3c2 f8d6 e1g1 g8e7 b2b3 c4b3 a2b3 e8g8 c1a3 c8f5 f1e1 f8e8 b1d2 d6a3 a1a3
+stdOut> info depth 13 seldepth 19 multipv 2 score cp -4 nodes 784056 nps 3843411 tbhits 0 time 204 pv g8f6 f1e2 b8c6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2 f8e8 c1e3 c5b6 f1e1 c8d7 e2d3 a8c8 c2d4 c6d4
+stdOut> info depth 13 seldepth 23 multipv 3 score cp -23 nodes 784056 nps 3843411 tbhits 0 time 204 pv f8e7 d4c5 e7c5 f1b5 b8c6 e1g1 g8e7 b1d2 e8g8 d2b3 c5d6 b5d3 c6e5 f3e5 d6e5
+stdOut> info depth 13 seldepth 18 multipv 4 score cp -63 nodes 784056 nps 3843411 tbhits 0 time 204 pv c8d7 f1d3
+stdOut> bestmove b8c6 ponder f1d3
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+stdOut> info depth 1 seldepth 1 multipv 1 score cp -4 nodes 355 nps 355000 tbhits 0 time 1 pv f1e2
+stdOut> info depth 1 seldepth 1 multipv 2 score cp -18 nodes 355 nps 355000 tbhits 0 time 1 pv d4c5
+stdOut> info depth 1 seldepth 2 multipv 3 score cp -18 nodes 355 nps 355000 tbhits 0 time 1 pv f1b5 c8d7
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -18 nodes 355 nps 355000 tbhits 0 time 1 pv b2b4
+stdOut> info depth 2 seldepth 2 multipv 1 score cp 0 nodes 944 nps 944000 tbhits 0 time 1 pv b2b3 b8c6 d1e2 f8e7
+stdOut> info depth 2 seldepth 2 multipv 2 score cp -4 nodes 944 nps 944000 tbhits 0 time 1 pv f1e2 b8c6
+stdOut> info depth 2 seldepth 2 multipv 3 score cp -18 nodes 944 nps 944000 tbhits 0 time 1 pv d4c5 f8c5
+stdOut> info depth 2 seldepth 4 multipv 4 score cp -18 nodes 944 nps 944000 tbhits 0 time 1 pv f1b5 c8d7 b5d7 b8d7 e1g1
+stdOut> info depth 3 seldepth 4 multipv 1 score cp 20 nodes 1568 nps 1568000 tbhits 0 time 1 pv d1e2 f8e7 d4c5 b8c6
+stdOut> info depth 3 seldepth 4 multipv 2 score cp -18 nodes 1568 nps 1568000 tbhits 0 time 1 pv d4c5 f8c5 f1b5 c8d7
+stdOut> info depth 3 seldepth 6 multipv 3 score cp -18 nodes 1568 nps 1568000 tbhits 0 time 1 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7
+stdOut> info depth 3 seldepth 3 multipv 4 score cp -18 nodes 1568 nps 1568000 tbhits 0 time 1 pv c1f4 c5c4 b2b3
+stdOut> info depth 4 seldepth 4 multipv 1 score cp 47 nodes 2305 nps 2305000 tbhits 0 time 1 pv d4c5 f8c5
+stdOut> info depth 4 seldepth 5 multipv 2 score cp 20 nodes 2305 nps 2305000 tbhits 0 time 1 pv d1e2 f8e7 d4c5 b8c6 b2b4
+stdOut> info depth 4 seldepth 4 multipv 3 score cp -16 nodes 2305 nps 2305000 tbhits 0 time 1 pv c1f4 c5c4 b2b3 c4b3 d1e2 f8e7
+stdOut> info depth 4 seldepth 7 multipv 4 score cp -18 nodes 2305 nps 2305000 tbhits 0 time 1 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5
+stdOut> info depth 5 seldepth 9 multipv 1 score cp 15 nodes 4082 nps 2041000 tbhits 0 time 2 pv f1e2 b8c6 c1e3 f6g4 e1g1 g4e3
+stdOut> info depth 5 seldepth 9 multipv 2 score cp 6 nodes 4082 nps 2041000 tbhits 0 time 2 pv d1e2 f8e7 d4c5 b8c6 b2b4 e8g8 b4b5
+stdOut> info depth 5 seldepth 9 multipv 3 score cp -11 nodes 4082 nps 2041000 tbhits 0 time 2 pv b1a3 b8c6 f1b5 f8d6 d4c5
+stdOut> info depth 5 seldepth 6 multipv 4 score cp -17 nodes 4082 nps 2041000 tbhits 0 time 2 pv c1f4 c5c4 b2b3 c4b3 d1e2 f8e7
+stdOut> info depth 6 seldepth 7 multipv 1 score cp -7 nodes 6045 nps 3022500 tbhits 0 time 2 pv f1e2 b8c6 c1e3 f6g4 e1g1 h7h6 e2d3 g4e3
+stdOut> info depth 6 seldepth 9 multipv 2 score cp -17 nodes 6045 nps 3022500 tbhits 0 time 2 pv c1f4 c5c4 b2b3 c4b3 d1e2 f8e7 a2b3
+stdOut> info depth 6 seldepth 9 multipv 3 score cp -18 nodes 6045 nps 3022500 tbhits 0 time 2 pv b1a3 c8d7 f1e2 c5c4 e1g1 f8a3 b2a3
+stdOut> info depth 6 seldepth 8 multipv 4 score cp -18 nodes 6045 nps 3022500 tbhits 0 time 2 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5 d7c5
+stdOut> info depth 7 seldepth 10 multipv 1 score cp 46 nodes 11471 nps 3823666 tbhits 0 time 3 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5 e8g8 b2b4
+stdOut> info depth 7 seldepth 11 multipv 2 score cp -1 nodes 11471 nps 3823666 tbhits 0 time 3 pv f1e2 b8c6 c1e3 c5d4 f3d4 f8d6 d4b5 c8e6 e1g1 e8g8 b1d2
+stdOut> info depth 7 seldepth 9 multipv 3 score cp -18 nodes 11471 nps 3823666 tbhits 0 time 3 pv b1a3 c8d7 f1e2 c5c4 e1g1 f8a3 b2a3 f6e4
+stdOut> info depth 7 seldepth 10 multipv 4 score cp -18 nodes 11471 nps 3823666 tbhits 0 time 3 pv c1e3 c5c4 b2b3 c4b3 a2b3
+stdOut> info depth 8 seldepth 16 multipv 1 score cp 25 nodes 38125 nps 3465909 tbhits 0 time 11 pv c1f4 b8c6 f1b5 f8e7 e1g1 c5c4 h2h3 e8g8 b2b3
+stdOut> info depth 8 seldepth 20 multipv 2 score cp 19 nodes 38125 nps 3465909 tbhits 0 time 11 pv c1e3 c5d4 f3d4 c8d7 f1e2 f8d6 e1g1 e8g8 b1d2 b8c6
+stdOut> info depth 8 seldepth 13 multipv 3 score cp 4 nodes 38125 nps 3465909 tbhits 0 time 11 pv f1b5 c8d7 b5a4 b7b5 a4c2 d8e7 c1e3 c5d4 c3d4 e7b4 e3d2 b4e7 f3e5
+stdOut> info depth 8 seldepth 14 multipv 4 score cp 1 nodes 38125 nps 3465909 tbhits 0 time 11 pv f1e2 b8c6 e2b5 f8e7 d4c5 e7c5 d1e2 c5e7
+stdOut> info depth 9 seldepth 16 multipv 1 score cp 38 nodes 87474 nps 3498960 tbhits 0 time 25 pv c1f4 b8c6 f1b5 f8e7 e1g1 e8g8 f1e1 f6e4 b5d3 c5d4 f3d4
+stdOut> info depth 9 seldepth 18 multipv 2 score cp 38 nodes 87474 nps 3498960 tbhits 0 time 25 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5 d7c5 c1e3 e8g8 b1d2 c5d3
+stdOut> info depth 9 seldepth 18 multipv 3 score cp 34 nodes 87474 nps 3498960 tbhits 0 time 25 pv c1e3 c5c4 b2b3 c4b3 f1b5 b8c6 a2b3 f8e7 b1d2 e8g8 b5d3
+stdOut> info depth 9 seldepth 19 multipv 4 score cp 7 nodes 87474 nps 3498960 tbhits 0 time 25 pv h2h3 b8c6 b1d2 c5d4 f3d4 c6d4 c3d4 c8d7 d1e2 d8e7
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 "
+stdOut> info depth 10 seldepth 17 multipv 1 score cp 36 nodes 161879 nps 3597311 tbhits 0 time 45 pv c1e3 c5c4 b2b3 f8e7 b3c4 e8g8 f1e2 c8f5 e1g1 d5c4 h2h3
+stdOut> info depth 10 seldepth 17 multipv 2 score cp 36 nodes 161879 nps 3597311 tbhits 0 time 45 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5 d7c5 c1e3 e8g8 b1d2 f8e8 h2h3 f6e4 d2e4 d5e4 f3d4
+stdOut> info depth 10 seldepth 16 multipv 3 score cp 20 nodes 161879 nps 3597311 tbhits 0 time 45 pv c1f4 b8c6 f1b5 f8e7 e1g1 e8g8 f1e1 c8e6 b5c6 b7c6 b1d2 d8b6 a1b1 a8e8 b2b3 c5d4
+stdOut> info depth 10 seldepth 20 multipv 4 score cp 18 nodes 161879 nps 3597311 tbhits 0 time 45 pv f1e2 b8c6 e1g1 f8e7 d4c5 e7c5 b2b4 c5d6 b1a3 e8g8 a3b5 d6b8
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 "
+stdOut> info depth 11 seldepth 22 multipv 1 score cp 35 nodes 313773 nps 3780397 tbhits 0 time 83 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 d4c5 d7c5 c1e3 e8g8 h2h3 f8e8 d1c2 e7d6 f1e1 d8d7 b1d2 h7h6 a1d1 g8h8
+stdOut> info depth 11 seldepth 25 multipv 2 score cp 34 nodes 313773 nps 3780397 tbhits 0 time 83 pv c1f4 b8c6 f1b5 f8e7 e1g1 e8g8 f1e1 c8e6 b1d2 d8b6 b5c6 b7c6 d1b1 a8e8 b1c2 c5d4 f3d4 c6c5 d4e6
+stdOut> info depth 11 seldepth 20 multipv 3 score cp 31 nodes 313773 nps 3780397 tbhits 0 time 83 pv f1e2 b8c6 e1g1 f8e7 d4c5 e7c5 b1a3 e8g8 a3c2 f8e8 c1e3 c5d6 e2d3 f6e4 h2h3
+stdOut> info depth 11 seldepth 18 multipv 4 score cp 27 nodes 313773 nps 3780397 tbhits 0 time 83 pv c1e3 c5c4 b2b3 c4b3 f1b5 c8d7 d1b3 b8c6 b1d2 f8d6
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 "
+stdOut> info depth 12 seldepth 27 multipv 1 score cp 49 nodes 519172 nps 3817441 tbhits 0 time 136 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 c1f4 e8g8 d1c2 f8e8 b1d2 d8b6 a1e1 e7d6
+stdOut> info depth 12 seldepth 18 multipv 2 score cp 42 nodes 519172 nps 3817441 tbhits 0 time 136 pv c1e3 c5d4 f3d4 b8c6 f1d3 f8d6 h2h3 e8g8 b1d2 f8e8 e1g1 f6e4 d2e4
+stdOut> info depth 12 seldepth 25 multipv 3 score cp 26 nodes 519172 nps 3817441 tbhits 0 time 136 pv c1f4 c5c4 g2g3 c8f5 f3h4 f5e6 b1d2 b8c6 f1g2 f8d6 f4d6 d8d6 e1g1 e8g8 d2f3 a8e8
+stdOut> info depth 12 seldepth 21 multipv 4 score cp 24 nodes 519172 nps 3817441 tbhits 0 time 136 pv f1e2 b8c6 e1g1 c5d4 c3d4 f8d6 b1c3 e8g8 f1e1 h7h6 e2d3 c6b4 c3b5 b4d3 d1d3
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 "
+userStdOut> stop
+instruction> stop
+stdOut> info depth 13 seldepth 22 multipv 1 score cp 70 nodes 669193 nps 3845936 tbhits 0 time 174 pv f1b5 c8d7 b5d7 b8d7 e1g1 f8e7 c1f4 e8g8 f1e1 f8e8 b1d2 a8c8 d1c2 d8b6 f4e5 e7d6 h2h3 c5d4 e5d4
+stdOut> info depth 13 seldepth 21 multipv 2 score cp 63 nodes 669193 nps 3845936 tbhits 0 time 174 pv c1e3 c5d4 f3d4 b8c6 f1d3 f8d6 h2h3 e8g8 e1g1 c6e5 d3b5 c8d7 b5d7 d8d7 b1d2 a8e8 f1e1
+stdOut> info depth 12 seldepth 25 multipv 3 score cp 26 nodes 669193 nps 3845936 tbhits 0 time 174 pv c1f4 c5c4 g2g3 c8f5 f3h4 f5e6 b1d2 b8c6 f1g2 f8d6 f4d6 d8d6 e1g1 e8g8 d2f3 a8e8
+stdOut> info depth 12 seldepth 21 multipv 4 score cp 24 nodes 669193 nps 3845936 tbhits 0 time 174 pv f1e2 b8c6 e1g1 c5d4 c3d4 f8d6 b1c3 e8g8 f1e1 h7h6 e2d3 c6b4 c3b5 b4d3 d1d3
+stdOut> bestmove f1b5 ponder c8d7
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+stdOut> info depth 1 seldepth 1 multipv 1 score cp 26 nodes 403 nps 201500 tbhits 0 time 2 pv c5c4
+stdOut> info depth 1 seldepth 2 multipv 2 score cp 2 nodes 403 nps 201500 tbhits 0 time 2 pv d8e7 d3e2
+stdOut> info depth 1 seldepth 1 multipv 3 score cp -15 nodes 403 nps 201500 tbhits 0 time 2 pv f8e7
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -47 nodes 403 nps 201500 tbhits 0 time 2 pv d8d7 d1e2 d7e6 d4c5 f8c5
+stdOut> info depth 2 seldepth 3 multipv 1 score cp 95 nodes 1084 nps 542000 tbhits 0 time 2 pv c5c4 e1g1 c4d3
+stdOut> info depth 2 seldepth 4 multipv 2 score cp -11 nodes 1084 nps 542000 tbhits 0 time 2 pv f8e7 d4c5
+stdOut> info depth 2 seldepth 3 multipv 3 score cp -28 nodes 1084 nps 542000 tbhits 0 time 2 pv d8e7 d3e2 b8c6
+stdOut> info depth 2 seldepth 3 multipv 4 score cp -146 nodes 1084 nps 542000 tbhits 0 time 2 pv c8e6 d4c5
+stdOut> info depth 3 seldepth 5 multipv 1 score cp 30 nodes 1630 nps 815000 tbhits 0 time 2 pv c5c4 d1e2 d8e7 e2e7 f8e7
+stdOut> info depth 3 seldepth 4 multipv 2 score cp -22 nodes 1630 nps 815000 tbhits 0 time 2 pv f8d6 d4c5 d6c5
+stdOut> info depth 3 seldepth 5 multipv 3 score cp -71 nodes 1630 nps 815000 tbhits 0 time 2 pv d8e7 d3e2 b8c6 e1g1 f6e4
+stdOut> info depth 3 seldepth 4 multipv 4 score cp -84 nodes 1630 nps 815000 tbhits 0 time 2 pv c8e6 e1g1 b8c6 f1e1
+stdOut> info depth 4 seldepth 6 multipv 1 score cp -21 nodes 2670 nps 1335000 tbhits 0 time 2 pv c5c4 d3c2 d8e7 d1e2 b8c6 e2e7 f8e7 e1g1
+stdOut> info depth 4 seldepth 7 multipv 2 score cp -26 nodes 2670 nps 1335000 tbhits 0 time 2 pv f8d6 d1e2 d6e7 d4c5 e8g8 e1g1 e7c5
+stdOut> info depth 4 seldepth 6 multipv 3 score cp -60 nodes 2670 nps 1335000 tbhits 0 time 2 pv f8e7 c1f4 c5c4
+stdOut> info depth 4 seldepth 6 multipv 4 score cp -71 nodes 2670 nps 1335000 tbhits 0 time 2 pv d8e7 d3e2 b8c6 e1g1 f6e4 b1d2
+stdOut> info depth 5 seldepth 7 multipv 1 score cp -7 nodes 4121 nps 2060500 tbhits 0 time 2 pv c5c4 d3c2 d8e7 d1e2 c8g4
+stdOut> info depth 5 seldepth 8 multipv 2 score cp -40 nodes 4121 nps 2060500 tbhits 0 time 2 pv f8d6 d1e2 d8e7 d4c5 e7e2 d3e2
+stdOut> info depth 5 seldepth 5 multipv 3 score cp -63 nodes 4121 nps 2060500 tbhits 0 time 2 pv f8e7 c1f4 c5c4 d3c2 b8c6
+stdOut> info depth 5 seldepth 7 multipv 4 score cp -69 nodes 4121 nps 2060500 tbhits 0 time 2 pv d8e7 d3e2 b8c6 e1g1 c5d4 f3d4 c6d4
+stdOut> info depth 6 seldepth 8 multipv 1 score cp -12 nodes 6168 nps 2056000 tbhits 0 time 3 pv c5c4 d3c2 d8e7 d1e2 c8g4 e2e7 f8e7 c1f4
+stdOut> info depth 6 seldepth 9 multipv 2 score cp -35 nodes 6168 nps 2056000 tbhits 0 time 3 pv f8d6 d4c5 d6c5 d1e2 c5e7 c1f4 e8g8 e1g1 f8e8
+stdOut> info depth 6 seldepth 8 multipv 3 score cp -55 nodes 6168 nps 2056000 tbhits 0 time 3 pv b8c6 e1g1 c5c4 d3c2 f8e7 f1e1 e8g8 f3e5
+stdOut> info depth 6 seldepth 6 multipv 4 score cp -63 nodes 6168 nps 2056000 tbhits 0 time 3 pv f8e7 c1f4 c5c4 d3c2 b8c6 b1d2
+stdOut> info depth 7 seldepth 14 multipv 1 score cp -20 nodes 10700 nps 2675000 tbhits 0 time 4 pv c5c4 d3c2 b8c6 e1g1 f8d6 f1e1 c8e6 f3g5 d8e7 b1d2
+stdOut> info depth 7 seldepth 9 multipv 2 score cp -40 nodes 10700 nps 2675000 tbhits 0 time 4 pv f8d6 d4c5 d6c5 d1e2 d8e7 c1f4 e7e2 d3e2 b8c6
+stdOut> info depth 7 seldepth 10 multipv 3 score cp -51 nodes 10700 nps 2675000 tbhits 0 time 4 pv c8e6 e1g1 c5c4 d3c2 b8c6 f1e1
+stdOut> info depth 7 seldepth 10 multipv 4 score cp -57 nodes 10700 nps 2675000 tbhits 0 time 4 pv b8c6 e1g1 c5c4 f1e1 f8e7 d3c2 e8g8 f3e5 e7d6 d1f3
+stdOut> info depth 8 seldepth 13 multipv 1 score cp -12 nodes 24348 nps 3478285 tbhits 0 time 7 pv f8e7 c1f4 c5c4 d3c2 b8c6 b1d2 d8b6
+stdOut> info depth 8 seldepth 14 multipv 2 score cp -18 nodes 24348 nps 3478285 tbhits 0 time 7 pv b8c6 e1g1 c5c4 f1e1 f8e7 d3c2 e8g8 f3e5 c8e6
+stdOut> info depth 8 seldepth 13 multipv 3 score cp -33 nodes 24348 nps 3478285 tbhits 0 time 7 pv f8d6 d1e2 d6e7 d4c5 e8g8 c1e3 f8e8 b2b4 f6g4 f3d4 g4e3 e2e3
+stdOut> info depth 8 seldepth 12 multipv 4 score cp -35 nodes 24348 nps 3478285 tbhits 0 time 7 pv c5c4 d3c2 c8e6 e1g1 f8d6 f3g5 b8c6 f1e1 d8e7
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 "
+stdOut> info depth 9 seldepth 17 multipv 1 score cp 13 nodes 51420 nps 3672857 tbhits 0 time 14 pv c5c4 d3c2 f8d6 d1e2 d8e7 e2e7 d6e7 c1f4 b8c6
+stdOut> info depth 9 seldepth 14 multipv 2 score cp -18 nodes 51420 nps 3672857 tbhits 0 time 14 pv f8e7 c1f4 c5c4 d3c2 b8c6 e1g1 e8g8 b1d2 c8e6 f3e5 a8c8
+stdOut> info depth 9 seldepth 15 multipv 3 score cp -23 nodes 51420 nps 3672857 tbhits 0 time 14 pv f8d6 d1e2 d6e7 d4c5 e8g8 c1e3 f8e8 b2b4 f6g4 e1g1 g4e3 e2e3 e7f6 e3f4 d8e7
+stdOut> info depth 9 seldepth 15 multipv 4 score cp -29 nodes 51420 nps 3672857 tbhits 0 time 14 pv b8c6 e1g1 c5c4 f1e1 f8e7 d3c2 e8g8 f3e5 e7d6 d1f3
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 "
+stdOut> info depth 10 seldepth 18 multipv 1 score cp 0 nodes 89836 nps 3905913 tbhits 0 time 23 pv c5c4 d3c2 f8d6 d1e2 d8e7 e2e7 d6e7 c1f4 b8c6 e1g1 h7h6 b1d2 e8g8 b2b4 c8e6 a1e1 a8e8 b4b5
+stdOut> info depth 10 seldepth 16 multipv 2 score cp -7 nodes 89836 nps 3905913 tbhits 0 time 23 pv f8d6 d4c5 d6c5 b2b4 c5d6 d1e2 d6e7 e1g1 e8g8 c1e3 f6e4 f1d1
+stdOut> info depth 10 seldepth 14 multipv 3 score cp -19 nodes 89836 nps 3905913 tbhits 0 time 23 pv f8e7 d4c5 e7c5 b2b4 d8e7 d1e2 e7e2 d3e2 c5b6 a2a4 b8c6 e1g1 e8g8 f1e1
+stdOut> info depth 10 seldepth 17 multipv 4 score cp -26 nodes 89836 nps 3905913 tbhits 0 time 23 pv b8c6 e1g1 c5c4 f1e1 f8e7 d3c2 e8g8 f3e5 e7d6 d1f3 f8e8 f3g3 d6e5 d4e5 f6e4
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 "
+stdOut> info depth 11 seldepth 22 multipv 1 score cp 25 nodes 282632 nps 3925444 tbhits 0 time 72 pv c5c4 d3c2 f8d6 d1e2 c8e6 f3g5 d8e7 e1g1 e8g8 g5e6 e7e6 e2e6 f7e6 f1e1 b8c6 e1e6
+stdOut> info depth 11 seldepth 20 multipv 2 score cp -10 nodes 282632 nps 3925444 tbhits 0 time 72 pv f8e7 d4c5 e7c5 e1g1 e8g8 c1f4 b8c6 h2h3 c5d6 f4d6 d8d6 b1d2 c8d7 d1c2
+stdOut> info depth 11 seldepth 18 multipv 3 score cp -28 nodes 282632 nps 3925444 tbhits 0 time 72 pv c8e6 e1g1 c5c4 d3c2 f8d6 f1e1 b8c6 f3e5 d8b6 b2b3 c4b3 a2b3
+stdOut> info depth 11 seldepth 21 multipv 4 score cp -42 nodes 282632 nps 3925444 tbhits 0 time 72 pv f8d6 e1g1 c5c4 f1e1 c8e6 d3c2 e8g8 f3e5 b8c6 c1f4 d8b6 e5c4 d5c4 f4d6 b6b2 b1d2 b2c3
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 "
+stdOut> info depth 12 seldepth 18 multipv 1 score cp 7 nodes 525806 nps 3923925 tbhits 0 time 134 pv c5c4 d3c2 f8d6 d1e2 c8e6 f3e5 e8g8 h2h3 b8c6 e1g1 f8e8 b1a3 d6a3 b2a3 c6e7 f1e1 e7g6
+stdOut> info depth 12 seldepth 25 multipv 2 score cp -17 nodes 525806 nps 3923925 tbhits 0 time 134 pv f8d6 d1e2 d6e7 d4c5 e8g8 c1e3 f8e8 b2b4 f6g4 e1g1 e7f6 h2h3 g4e3 f2e3 b8c6 b4b5 c6e5 f3e5 e8e5
+stdOut> info depth 12 seldepth 23 multipv 3 score cp -25 nodes 525806 nps 3923925 tbhits 0 time 134 pv f8e7 d4c5 e7c5 e1g1 e8g8 h2h3 b8c6 b1a3 f8e8 a3c2 h7h6 f1e1 c8e6 c1f4 a7a6
+stdOut> info depth 12 seldepth 21 multipv 4 score cp -28 nodes 525806 nps 3923925 tbhits 0 time 134 pv b8c6 e1g1 c5c4 f1e1 f8e7 d3c2 e8g8 f3e5 e7d6 c1f4 c6e7 b1d2 c8e6 d2f3 e6f5 c2f5 e7f5 f4g5 f8e8
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 "
+userStdOut> stop
+instruction> stop
+stdOut> info depth 13 seldepth 21 multipv 1 score cp -2 nodes 663418 nps 3925550 tbhits 0 time 169 pv c5c4 d3c2 f8d6 d1e2 c8e6 f3g5 d8e7 g5e6 e7e6 e2e6 f7e6 b2b3 c4b3 a2b3 b8c6 e1g1 e8f7 f1e1 a7a6 b1d2 h8e8
+stdOut> info depth 13 seldepth 23 multipv 2 score cp -7 nodes 663418 nps 3925550 tbhits 0 time 169 pv f8d6 d4c5 d6c5 e1g1 e8g8 c1f4 f8e8 b1d2 b8c6 f1e1 e8e1 d1e1 c5d6 f4g5 c8e6 d2b3
+stdOut> info depth 12 seldepth 23 multipv 3 score cp -25 nodes 663418 nps 3925550 tbhits 0 time 169 pv f8e7 d4c5 e7c5 e1g1 e8g8 h2h3 b8c6 b1a3 f8e8 a3c2 h7h6 f1e1 c8e6 c1f4 a7a6
+stdOut> info depth 12 seldepth 21 multipv 4 score cp -28 nodes 663418 nps 3925550 tbhits 0 time 169 pv b8c6 e1g1 c5c4 f1e1 f8e7 d3c2 e8g8 f3e5 e7d6 c1f4 c6e7 b1d2 c8e6 d2f3 e6f5 c2f5 e7f5 f4g5 f8e8
+stdOut> bestmove c5c4 ponder d3c2
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 "
+instruction> go infinite
+stdOut> info depth 1 seldepth 1 multipv 1 score cp 20 nodes 485 nps 242500 tbhits 0 time 2 pv c1f4
+stdOut> info depth 1 seldepth 1 multipv 2 score cp 14 nodes 485 nps 242500 tbhits 0 time 2 pv d4c5
+stdOut> info depth 1 seldepth 3 multipv 3 score cp 13 nodes 485 nps 242500 tbhits 0 time 2 pv e1g1 e8g8 d4c5
+stdOut> info depth 1 seldepth 2 multipv 4 score cp 0 nodes 485 nps 242500 tbhits 0 time 2 pv c1g5 e8g8 e1g1 c5c4 d3c2
+stdOut> info depth 2 seldepth 2 multipv 1 score cp 20 nodes 1072 nps 536000 tbhits 0 time 2 pv c1f4 c5c4
+stdOut> info depth 2 seldepth 2 multipv 2 score cp 14 nodes 1072 nps 536000 tbhits 0 time 2 pv d4c5 e7c5
+stdOut> info depth 2 seldepth 4 multipv 3 score cp 13 nodes 1072 nps 536000 tbhits 0 time 2 pv e1g1 e8g8 d4c5 e7c5
+stdOut> info depth 2 seldepth 4 multipv 4 score cp 0 nodes 1072 nps 536000 tbhits 0 time 2 pv c1g5 e8g8 e1g1 c5c4
+stdOut> info depth 3 seldepth 5 multipv 1 score cp 13 nodes 1688 nps 844000 tbhits 0 time 2 pv d4c5 e7c5 e1g1 e8g8 c1f4
+stdOut> info depth 3 seldepth 5 multipv 2 score cp 13 nodes 1688 nps 844000 tbhits 0 time 2 pv e1g1 e8g8 d4c5 e7c5 c1f4
+stdOut> info depth 3 seldepth 3 multipv 3 score cp 5 nodes 1688 nps 844000 tbhits 0 time 2 pv c1f4 c5c4 d3c2
+stdOut> info depth 3 seldepth 5 multipv 4 score cp 0 nodes 1688 nps 844000 tbhits 0 time 2 pv c1g5 e8g8 e1g1 c5c4 d3c2
+stdOut> info depth 4 seldepth 6 multipv 1 score cp 13 nodes 2461 nps 1230500 tbhits 0 time 2 pv d4c5 e7c5 e1g1 e8g8 c1f4 b8c6
+stdOut> info depth 4 seldepth 6 multipv 2 score cp 13 nodes 2461 nps 1230500 tbhits 0 time 2 pv e1g1 e8g8 d4c5 e7c5 c1f4 b8c6
+stdOut> info depth 4 seldepth 4 multipv 3 score cp 5 nodes 2461 nps 1230500 tbhits 0 time 2 pv c1f4 c5c4 d3c2 b8c6
+stdOut> info depth 4 seldepth 6 multipv 4 score cp 0 nodes 2461 nps 1230500 tbhits 0 time 2 pv c1g5 e8g8 e1g1 c5c4 d3c2 e7d6
+stdOut> info depth 5 seldepth 7 multipv 1 score cp 13 nodes 3485 nps 1742500 tbhits 0 time 2 pv d4c5 e7c5 e1g1 e8g8 c1f4 b8c6 f1e1
+stdOut> info depth 5 seldepth 7 multipv 2 score cp 13 nodes 3485 nps 1742500 tbhits 0 time 2 pv e1g1 e8g8 d4c5 e7c5 c1f4 b8c6 f1e1
+stdOut> info depth 5 seldepth 7 multipv 3 score cp 6 nodes 3485 nps 1742500 tbhits 0 time 2 pv c1g5 e8g8 d4c5 e7c5 e1g1 h7h6 g5f4
+stdOut> info depth 5 seldepth 7 multipv 4 score cp 2 nodes 3485 nps 1742500 tbhits 0 time 2 pv c1f4 c5c4 d3c2 b8c6 e1g1 e8g8 f3e5 d8b6
+stdOut> info depth 6 seldepth 8 multipv 1 score cp 33 nodes 8977 nps 2992333 tbhits 0 time 3 pv c1f4 c5c4 d3c2 b8c6 b1a3
+stdOut> info depth 6 seldepth 9 multipv 2 score cp 27 nodes 8977 nps 2992333 tbhits 0 time 3 pv e1g1 e8g8 d4c5 e7c5 c1f4 b8c6 b1a3
+stdOut> info depth 6 seldepth 8 multipv 3 score cp 12 nodes 8977 nps 2992333 tbhits 0 time 3 pv d4c5 e7c5 e1g1 e8g8 c1f4 f8e8 b1d2 b8c6
+stdOut> info depth 6 seldepth 8 multipv 4 score cp 2 nodes 8977 nps 2992333 tbhits 0 time 3 pv d3c2 e8g8 e1g1 b8c6 c1f4 c5c4 f3e5 d8b6 b2b3
+stdOut> info depth 7 seldepth 12 multipv 1 score cp 38 nodes 13179 nps 3294750 tbhits 0 time 4 pv c1f4 e8g8 e1g1 c5c4 d3c2 b8c6 f3e5 d8b6
+stdOut> info depth 7 seldepth 13 multipv 2 score cp 19 nodes 13179 nps 3294750 tbhits 0 time 4 pv e1g1 e8g8 b1d2 b8c6 d4c5 e7c5 b2b4 c5d6 f1e1 c8d7
+stdOut> info depth 7 seldepth 9 multipv 3 score cp 19 nodes 13179 nps 3294750 tbhits 0 time 4 pv b1d2 e8g8 e1g1 b8c6 d4c5 e7c5 b2b4 c5d6 f1e1
+stdOut> info depth 7 seldepth 10 multipv 4 score cp 10 nodes 13179 nps 3294750 tbhits 0 time 4 pv d4c5 e7c5 e1g1 e8g8 c1f4 f8e8 b1d2 b8c6 d2b3 c5d6
+stdOut> info depth 8 seldepth 9 multipv 1 score cp 38 nodes 20133 nps 3355500 tbhits 0 time 6 pv c1f4 e8g8 e1g1 c5c4 d3c2 b8c6 f3e5 d8b6 b2b3
+stdOut> info depth 8 seldepth 13 multipv 2 score cp 18 nodes 20133 nps 3355500 tbhits 0 time 6 pv e1g1 e8g8 c1f4 b8c6 d4c5 e7c5 b1a3 f8e8 b2b4 c5d6 f4d6 d8d6 a3b5
+stdOut> info depth 8 seldepth 13 multipv 3 score cp 11 nodes 20133 nps 3355500 tbhits 0 time 6 pv d4c5 e7c5 e1g1 e8g8 c1f4 f8e8 b1d2 b8c6 f1e1 e8e1 d1e1 c5d6
+stdOut> info depth 8 seldepth 13 multipv 4 score cp 7 nodes 20133 nps 3355500 tbhits 0 time 6 pv d3c2 e8g8 e1g1 b8c6 c1f4 c8g4 d4c5 e7c5 h2h3
+stdOut> info depth 9 seldepth 15 multipv 1 score cp 34 nodes 30215 nps 3776875 tbhits 0 time 8 pv d4c5 e7c5 e1g1 e8g8 c1f4 f8e8 b1d2 b8c6 f1e1 e8e1 d1e1 c5d6 f3e5 c8e6
+stdOut> info depth 9 seldepth 18 multipv 2 score cp 25 nodes 30215 nps 3776875 tbhits 0 time 8 pv c1f4 e8g8 e1g1 b8c6 d4c5 e7c5 b1d2 f6h5 f4g5 f7f6
+stdOut> info depth 9 seldepth 16 multipv 3 score cp 25 nodes 30215 nps 3776875 tbhits 0 time 8 pv e1g1 e8g8 d4c5 e7c5 c1f4 b8c6 b1d2 f6h5 f4g5 f7f6 g5e3 c5e3 f2e3 d8b6
+stdOut> info depth 9 seldepth 11 multipv 4 score cp 7 nodes 30215 nps 3776875 tbhits 0 time 8 pv d3c2 e8g8 e1g1 b8c6 c1f4 c5d4 f3d4 c8g4 f2f3 g4d7 f1e1
+stdOut> info depth 10 seldepth 15 multipv 1 score cp 35 nodes 71067 nps 4180411 tbhits 0 time 17 pv d4c5 e7c5 e1g1 e8g8 c1f4 b8c6 b1a3 f8e8 b2b4 c5d6 f4d6 d8d6 a3b5 d6d8 f1e1
+stdOut> info depth 10 seldepth 17 multipv 2 score cp 35 nodes 71067 nps 4180411 tbhits 0 time 17 pv e1g1 e8g8 c1f4 b8c6 d4c5 e7c5 b1a3 f8e8 b2b4 c5d6 f4d6
+stdOut> info depth 10 seldepth 15 multipv 3 score cp 28 nodes 71067 nps 4180411 tbhits 0 time 17 pv d3c2 e8g8 e1g1 b8c6 d4c5 e7c5 c1f4 f8e8 b1a3 d5d4 a3b5 d4c3 b2c3
+stdOut> info depth 10 seldepth 16 multipv 4 score cp 15 nodes 71067 nps 4180411 tbhits 0 time 17 pv c1f4 e8g8 e1g1 d8b6 b2b3 b8c6 f1e1 c5d4 h2h3 f8e8 f3e5 c6e5
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 "
+stdOut> info depth 11 seldepth 19 multipv 1 score cp 53 nodes 173355 nps 4127500 tbhits 0 time 42 pv e1g1 e8g8 c1f4 c8g4 h2h3 g4f3 d1f3 b8c6 d4c5 e7c5 f1e1 f8e8 e1e8 d8e8 b1d2
+stdOut> info depth 11 seldepth 20 multipv 2 score cp 37 nodes 173355 nps 4127500 tbhits 0 time 42 pv c1f4 e8g8 e1g1 d8b6 b2b3 c5d4 f3d4 e7c5 d4f5 f6e4 d3e4 d5e4 f5d6
+stdOut> info depth 11 seldepth 17 multipv 3 score cp 37 nodes 173355 nps 4127500 tbhits 0 time 42 pv d4c5 e7c5 e1g1 e8g8 c1f4 f8e8 b1d2 c5d6 f4e3 b8c6 d1c2 c8e6 f3g5 h7h6 g5e6 e8e6
+stdOut> info depth 11 seldepth 17 multipv 4 score cp 26 nodes 173355 nps 4127500 tbhits 0 time 42 pv c1e3 c5c4 d3c2 e8g8 h2h3 b8c6 e1g1 e7d6 b2b3 b7b5 b3c4 d5c4 d4d5 c6e5
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 "
+stdOut> info depth 12 seldepth 16 multipv 1 score cp 73 nodes 301257 nps 4071040 tbhits 0 time 74 pv c1f4 b8c6 b1d2 e8g8 e1g1 c8e6 d4c5 e7c5 f3g5 c5d6 f4e3 f8e8 g5e6
+stdOut> info depth 12 seldepth 19 multipv 2 score cp 73 nodes 301257 nps 4071040 tbhits 0 time 74 pv d4c5 e7c5 e1g1 e8g8 c1f4 f8e8 b1d2 b8c6 f1e1 e8e1 d1e1 c5d6 f4e3 c8e6 d2b3 e6g4 b3d4
+stdOut> info depth 12 seldepth 19 multipv 3 score cp 70 nodes 301257 nps 4071040 tbhits 0 time 74 pv e1g1 e8g8 c1f4 b8c6 d4c5 e7c5 b1d2 f8e8 f1e1 c8e6 f3g5 c5d6 f4d6 d8d6 d2f3 h7h6 g5e6
+stdOut> info depth 12 seldepth 18 multipv 4 score cp 55 nodes 301257 nps 4071040 tbhits 0 time 74 pv c1e3 c5c4 d3c2 e8g8 h2h3 b8c6 b2b3 e7d6 b3c4 d5c4 b1d2 f6d5 d2c4 d5c3
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 d2 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 d2 b6b7 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 d2 b6b7 d5b7 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 d2 b6b7 d5b7 h3h4 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 d2 b6b7 d5b7 h3h4 d1h1 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 d2 b6b7 d5b7 h3h4 d1h1 h4g5 "
+userStdOut> chesscom movelist "e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f1c4 g8f6 e1g1 f6e4 f1e1 d7d5 c4d5 d8d5 b1c3 d5d8 e1e4 f8e7 f3d4 e8g8 d4c6 b7c6 d1e2 e7d6 c1f4 a8b8 b2b3 h7h6 a1d1 a7a5 e4d4 f8e8 e2d3 b8b4 f4d6 b4d4 d3d4 c7d6 h2h3 d6d5 d1d3 e8e1 g1h2 d8d6 g2g3 d6g6 d3d2 c8h3 c3e2 h3g4 e2f4 g4f3 d2d1 e1d1 d4d1 f3d1 f4g6 f7g6 c2c3 c6c5 h2g2 g8f7 g2f1 d1c2 f1e1 c2e4 e1d2 f7e6 a2a3 g6g5 b3b4 c5b4 c3b4 a5b4 a3b4 d5d4 d2e2 e6e5 f2f3 e4d5 e2f2 h6h5 f2e2 h5h4 e2f2 g7g6 g3h4 g5h4 b4b5 h4h3 f2g3 d4d3 g3h3 d3d2 b5b6 d2 b6b7 d5b7 h3h4 d1h1 h4g5 h1h5 "
+userStdOut> stop
+instruction> stop
+stdOut> info depth 13 seldepth 23 multipv 1 score cp 65 nodes 705384 nps 4053931 tbhits 0 time 174 pv d4c5 e7c5 e1g1 e8g8 f1e1 b8c6 c1e3 c5e3 e1e3 c8e6 b1d2 f8e8 d2b3 e6g4 e3e8 f6e8 d1c2 g4f3 d3h7 g8f8
+stdOut> info depth 13 seldepth 17 multipv 2 score cp 62 nodes 705384 nps 4053931 tbhits 0 time 174 pv c1f4 e8g8
+stdOut> info depth 12 seldepth 19 multipv 3 score cp 70 nodes 705384 nps 4053931 tbhits 0 time 174 pv e1g1 e8g8 c1f4 b8c6 d4c5 e7c5 b1d2 f8e8 f1e1 c8e6 f3g5 c5d6 f4d6 d8d6 d2f3 h7h6 g5e6
+stdOut> info depth 12 seldepth 18 multipv 4 score cp 55 nodes 705384 nps 4053931 tbhits 0 time 174 pv c1e3 c5c4 d3c2 e8g8 h2h3 b8c6 b2b3 e7d6 b3c4 d5c4 b1d2 f6d5 d2c4 d5c3
+stdOut> bestmove d4c5 ponder e7c5
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> go infinite
+instruction> go infinite
+stdOut> info depth 1 seldepth 1 multipv 1 score cp -61 nodes 266 nps 133000 tbhits 0 time 2 pv e7c5
+stdOut> info depth 1 seldepth 2 multipv 2 score cp -73 nodes 266 nps 133000 tbhits 0 time 2 pv e8g8 c1e3
+stdOut> info depth 1 seldepth 1 multipv 3 score cp -86 nodes 266 nps 133000 tbhits 0 time 2 pv b8c6
+stdOut> info depth 1 seldepth 1 multipv 4 score cp -100 nodes 266 nps 133000 tbhits 0 time 2 pv b8d7 b2b4
+stdOut> info depth 2 seldepth 4 multipv 1 score cp -61 nodes 734 nps 367000 tbhits 0 time 2 pv e7c5 e1g1 e8g8 f1e1
+stdOut> info depth 2 seldepth 3 multipv 2 score cp -98 nodes 734 nps 367000 tbhits 0 time 2 pv e8g8 b2b4 b8c6 e1g1
+stdOut> info depth 2 seldepth 4 multipv 3 score cp -98 nodes 734 nps 367000 tbhits 0 time 2 pv b8c6 e1g1 e8g8 b2b4
+stdOut> info depth 2 seldepth 2 multipv 4 score cp -100 nodes 734 nps 367000 tbhits 0 time 2 pv b8d7 b2b4
+stdOut> info depth 3 seldepth 5 multipv 1 score cp -61 nodes 1302 nps 651000 tbhits 0 time 2 pv e7c5 e1g1 e8g8 f1e1 b8c6
+stdOut> info depth 3 seldepth 5 multipv 2 score cp -126 nodes 1302 nps 651000 tbhits 0 time 2 pv e8g8 b2b4 b8c6 e1g1 f8e8
+stdOut> info depth 3 seldepth 5 multipv 3 score cp -126 nodes 1302 nps 651000 tbhits 0 time 2 pv b8c6 e1g1 e8g8 b2b4 f8e8
+stdOut> info depth 3 seldepth 5 multipv 4 score cp -140 nodes 1302 nps 651000 tbhits 0 time 2 pv b8d7 b2b4 e8g8 c1e3
+stdOut> info depth 4 seldepth 6 multipv 1 score cp -62 nodes 2362 nps 1181000 tbhits 0 time 2 pv e7c5 e1g1 e8g8 f1e1 b8c6 b2b4
+stdOut> info depth 4 seldepth 6 multipv 2 score cp -108 nodes 2362 nps 1181000 tbhits 0 time 2 pv e8g8 b2b4 a7a6 e1g1 b8c6
+stdOut> info depth 4 seldepth 6 multipv 3 score cp -119 nodes 2362 nps 1181000 tbhits 0 time 2 pv b8c6 e1g1 e8g8 c1e3 f6g4 e3f4
+stdOut> info depth 4 seldepth 6 multipv 4 score cp -164 nodes 2362 nps 1181000 tbhits 0 time 2 pv b8d7 b2b4 e8g8 e1g1 f8e8 f1e1
+stdOut> info depth 5 seldepth 7 multipv 1 score cp -62 nodes 3727 nps 1863500 tbhits 0 time 2 pv e7c5 e1g1 e8g8 f1e1 b8c6 b2b4 c5d6
+stdOut> info depth 5 seldepth 7 multipv 2 score cp -108 nodes 3727 nps 1863500 tbhits 0 time 2 pv e8g8 b2b4 a7a6 e1g1 b8c6 c1e3
+stdOut> info depth 5 seldepth 7 multipv 3 score cp -119 nodes 3727 nps 1863500 tbhits 0 time 2 pv b8c6 e1g1 e8g8 c1e3 f6g4 e3f4 e7c5
+stdOut> info depth 5 seldepth 7 multipv 4 score cp -157 nodes 3727 nps 1863500 tbhits 0 time 2 pv b8d7 b2b4 a7a5 e1g1 e8g8 c1f4 a5b4
+stdOut> info depth 6 seldepth 8 multipv 1 score cp -61 nodes 6768 nps 2256000 tbhits 0 time 3 pv e7c5 e1g1 e8g8 f1e1 b8c6 c1e3 c5e3 e1e3 c8g4
+stdOut> info depth 6 seldepth 9 multipv 2 score cp -122 nodes 6768 nps 2256000 tbhits 0 time 3 pv e8g8 b2b4 a7a6 e1g1 b8c6 c1f4 c8e6 f1e1 a8c8
+stdOut> info depth 6 seldepth 8 multipv 3 score cp -136 nodes 6768 nps 2256000 tbhits 0 time 3 pv a7a6 b1d2 c8e6 e1g1 e8g8 d2b3 b8c6 b3d4
+stdOut> info depth 6 seldepth 8 multipv 4 score cp -153 nodes 6768 nps 2256000 tbhits 0 time 3 pv b8c6 e1g1 e8g8 b2b4 a7a6 c1f4 c8e6 b1d2
+stdOut> info depth 7 seldepth 8 multipv 1 score cp -61 nodes 14260 nps 3565000 tbhits 0 time 4 pv e7c5 e1g1 e8g8 f1e1 b8c6 c1e3 c5e3 e1e3
+stdOut> info depth 7 seldepth 11 multipv 2 score cp -140 nodes 14260 nps 3565000 tbhits 0 time 4 pv e8g8 b2b4 f6e4 c1e3 c8g4 e1g1 g4h5 f1e1
+stdOut> info depth 7 seldepth 9 multipv 3 score cp -141 nodes 14260 nps 3565000 tbhits 0 time 4 pv b8c6 b2b4 c8g4 e1g1 e8g8 f1e1 f6e4 d3e4 d5e4
+stdOut> info depth 7 seldepth 9 multipv 4 score cp -141 nodes 14260 nps 3565000 tbhits 0 time 4 pv c8g4 e1g1 b8c6 b2b4 e8g8 f1e1 f6e4 d3e4 d5e4
+stdOut> info depth 8 seldepth 12 multipv 1 score cp -61 nodes 22816 nps 3259428 tbhits 0 time 7 pv e7c5 e1g1 e8g8 f1e1 b8c6 c1e3 c5e3 e1e3 c8g4 b1d2 d5d4 c3d4
+stdOut> info depth 8 seldepth 10 multipv 2 score cp -141 nodes 22816 nps 3259428 tbhits 0 time 7 pv e8g8 b2b4 c8g4 e1g1 b8c6 f1e1 f6e4 d3e4 d5e4 d1d8
+stdOut> info depth 8 seldepth 10 multipv 3 score cp -141 nodes 22816 nps 3259428 tbhits 0 time 7 pv b8c6 b2b4 c8g4 e1g1 e8g8 f1e1 f6e4 d3e4 d5e4 d1d8
+stdOut> info depth 8 seldepth 9 multipv 4 score cp -141 nodes 22816 nps 3259428 tbhits 0 time 7 pv c8g4 e1g1 b8c6 b2b4 e8g8 f1e1 f6e4 d3e4 d5e4
+stdOut> info depth 9 seldepth 19 multipv 1 score cp -61 nodes 56462 nps 3764133 tbhits 0 time 15 pv e7c5 e1g1 e8g8 f1e1 b8c6 c1e3 c5e3 e1e3 c8g4 b1d2 d5d4 c3d4 c6d4 h2h3 g4e6 f3d4 d8d4 d2b3 d4b4
+stdOut> info depth 9 seldepth 14 multipv 2 score cp -133 nodes 56462 nps 3764133 tbhits 0 time 15 pv b8c6 e1g1 e8g8 b2b4 c8e6 c1e3 f6e4 f3d2 e4d2 b1d2 e7f6
+stdOut> info depth 9 seldepth 11 multipv 3 score cp -141 nodes 56462 nps 3764133 tbhits 0 time 15 pv e8g8 b2b4 c8g4 e1g1 b8c6 f1e1 f6e4 d3e4 d5e4 d1d8
+stdOut> info depth 9 seldepth 14 multipv 4 score cp -162 nodes 56462 nps 3764133 tbhits 0 time 15 pv c8g4 e1g1 b8c6 f1e1 e8g8 b2b4 g4h5 b1a3 f6e4 d1c2 h5g6 c1f4 e7f6
+userStdOut> stop
+instruction> stop
+stdOut> info depth 10 seldepth 23 multipv 1 score cp -50 nodes 85093 nps 3867863 tbhits 0 time 22 pv e7c5 e1g1 e8g8 f1e1 b8c6 c1e3 c5e3 e1e3 c8g4 b1d2 d5d4 c3d4 c6d4
+stdOut> info depth 10 seldepth 11 multipv 2 score cp -145 upperbound nodes 85093 nps 3867863 tbhits 0 time 22 pv b8c6 e1g1
+stdOut> info depth 9 seldepth 11 multipv 3 score cp -141 nodes 85093 nps 3867863 tbhits 0 time 22 pv e8g8 b2b4 c8g4 e1g1 b8c6 f1e1 f6e4 d3e4 d5e4 d1d8
+stdOut> info depth 9 seldepth 14 multipv 4 score cp -162 nodes 85093 nps 3867863 tbhits 0 time 22 pv c8g4 e1g1 b8c6 f1e1 e8g8 b2b4 g4h5 b1a3 f6e4 d1c2 h5g6 c1f4 e7f6
+stdOut> bestmove e7c5 ponder e1g1
+userStdOut> isready
+instruction> isready
+stdOut> readyok
+userStdOut> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 
+instruction> position startpos moves e2e4 c7c5 g1f3 e7e6 c2c3 d7d5 e4d5 e6d5 d2d4 g8f6 f1d3 f8e7 d4c5 e7c5 

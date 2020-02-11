@@ -53,6 +53,8 @@ void PVboards::update(Game game)
 	{
 		for (size_t i = 0; i < vecBoard.size(); i++)
 		{
+			std::cout << "i = " << i << std::endl;
+			game.print();
 			if (i < game.vecPly.back().vecEA.size())
 			{
 				if (game.vecPly.back().vecEA[i].score > 100)

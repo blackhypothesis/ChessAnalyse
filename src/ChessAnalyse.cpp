@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	sf::RenderWindow window(sf::VideoMode(800, 950), "Chess Analyse");
 	window.setFramerateLimit(nFPS);
 
-	TextInput text = TextInput( { 15.0f, 750.0f });
+	TextInput text = TextInput(sf::Vector2f(15.0f, 750.0f));
 	std::string input;
 
 	PVboards pvBoards;
