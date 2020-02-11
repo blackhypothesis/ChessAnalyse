@@ -177,7 +177,7 @@ void ChessBoard::updateMoves()
 	if (vecVariant.size() > 1)
 	{
 
-		/*
+		// /*
 		for (size_t i = 0; i < 2; i++)
 		{
 			vecMovesAndVariant.push_back(vecVariant[i]);
@@ -193,8 +193,9 @@ void ChessBoard::updateMoves()
 			}
 		}
 		vecMovesAndVariant.pop_back();
-		*/
+		// */
 
+		/*
 		for (std::vector<std::string>::iterator it = vecVariant.begin(); it <= iCurrentPly; it++)
 		{
 			vecMovesAndVariant.push_back(*it);
@@ -210,6 +211,7 @@ void ChessBoard::updateMoves()
 				board[x2][y2].highlight = 1 + 70 * nrPly;
 			}
 		}
+		*/
 	}
 
 	for (auto& move : vecMovesAndVariant)

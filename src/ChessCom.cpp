@@ -34,9 +34,9 @@ void ChessCom::operator()()
 	std::cout << "starting chess.com thread" << std::endl;
 
 	// using start_time and end_time to start creating movelist, when the end of the file is reached.
-	// if the loop searches through the file it takes about  200 ms till the next move entry is found.
-	// if the time is more than 300 ms, then we assume, that this is an actual move. if this happens,
-	// do no longer rely on the delta time, because premoves will be probably omitted.
+	// if the loop searches through the file it takes only a few ms till the next move entry is found.
+	// if the time is more than 100 ms, then we assume, that this is an actual move. if this happens,
+	// do no longer rely on the delta time, because premoves may be omitted.
 	start_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 
 	if (ifs.is_open())
@@ -53,7 +53,7 @@ void ChessCom::operator()()
 						auto delta = end_time - start_time;
 						std::cout << "delta = " << delta << std::endl;
 
-						if (get_move_list || end_time - start_time > 1000)
+						if (get_move_list || delta > 1000)
 						{
 							get_move_list = true;
 							// get obfuscted movelist from chess.com, translate it, and send it to usetStdOut queue
@@ -63,9 +63,8 @@ void ChessCom::operator()()
 							// const std::string chessComInfo = "chesscom info movelist " + chessComMoveList;
 							// userStdOut.push(chessComInfo);
 							userStdOut.push(chessComCommand);
-							start_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-
 						}
+						start_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 					}
 				}
 				catch (std::regex_error &e)
