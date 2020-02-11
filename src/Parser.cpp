@@ -103,8 +103,15 @@ std::vector<std::string> Parser::parse(std::string subject)
 				game.vecPly.push_back(Ply());
 				game.vecPly.back().ply_nr = current_ply;
 				game.vecPly.back().moveList = current_moveList;
+
+				for (size_t i = 0; i < 4; i++)
+				{
+					game.vecPly.back().vecEA.push_back(EngineAnalysis());
+				}
 				game.vecPly.back().elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count() - start_time;
 			}
+
+			/*
 
 			if (current_depth != ea.depth)
 				new_depth = true;
@@ -140,6 +147,12 @@ std::vector<std::string> Parser::parse(std::string subject)
 					// printShortInfo(game.vecPly.back());
 				}
 			}
+			*/
+
+			game.vecPly.back().vecEA[ea.multipv - 1] = ea;
+
+
+
 		}
 		// "readyok"
 		// as soon as the engine writes "readyok" the userStdOut queue can be parsed again.

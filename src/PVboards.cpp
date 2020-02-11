@@ -73,7 +73,14 @@ void PVboards::update(Game game)
 
 				std::stringstream score;
 				std::string moveList = game.vecPly.back().vecEA[i].moveList;
-				score << std::setw(6) << std::setprecision(2)<< (float)(game.vecPly.back().vecEA[i].score) / 100;
+				if (game.vecPly.back().vecEA[i].score_type == "cp")
+				{
+					score << std::setw(6) << std::setprecision(3)<< (float)(game.vecPly.back().vecEA[i].score) / 100;
+				}
+				else
+				{
+					score << "M " << game.vecPly.back().vecEA[i].score;
+				}
 				moveList = moveList.substr(0, 10);
 				int depth = game.vecPly.back().vecEA[i].depth;
 

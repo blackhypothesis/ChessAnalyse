@@ -51,7 +51,6 @@ void ChessCom::operator()()
 					{
 						end_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 						auto delta = end_time - start_time;
-						std::cout << "delta = " << delta << std::endl;
 
 						if (get_move_list || delta > 1000)
 						{
