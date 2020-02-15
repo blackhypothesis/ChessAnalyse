@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/Arrow.cpp \
 ../src/ChessAnalyse.cpp \
 ../src/ChessBoard.cpp \
 ../src/ChessCom.cpp \
@@ -15,6 +16,7 @@ CPP_SRCS += \
 ../src/ThreadSaveQueue.cpp 
 
 OBJS += \
+./src/Arrow.o \
 ./src/ChessAnalyse.o \
 ./src/ChessBoard.o \
 ./src/ChessCom.o \
@@ -26,6 +28,7 @@ OBJS += \
 ./src/ThreadSaveQueue.o 
 
 CPP_DEPS += \
+./src/Arrow.d \
 ./src/ChessAnalyse.d \
 ./src/ChessBoard.d \
 ./src/ChessCom.d \

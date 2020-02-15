@@ -21,6 +21,7 @@ PVboards::PVboards() :
 
 void PVboards::adjust()
 {
+	sf::Vector2f offset = sf::Vector2f(0, 0);
 	float boardSize = 8 * fieldSize;
 
 	for (size_t y = 0; y < 2; y++)
@@ -28,12 +29,12 @@ void PVboards::adjust()
 		for (size_t x = 0; x < 2; x++)
 		{
 			unsigned int idx = 2 * y + x;
-			vecBoard[idx].setPosition( { 15.0f + x * (boardSize + 50.0f), 15.0f + y * (boardSize + 50.0f) });
+			vecBoard[idx].setPosition( { offset.x + x * (boardSize + 50.0f), offset.y + y * (boardSize + 50.0f) });
 			vecBoard[idx].setFieldSize(fieldSize);
 
 			for (size_t info = 0; info < numberInfo; info++)
 			{
-				vecText[idx][info].setPosition( { 15.0f + x * (boardSize + 50.0f) + 120 * info, 20.0f + y * (boardSize + 50.0f) + boardSize });
+				vecText[idx][info].setPosition( { offset.x + x * (boardSize + 50.0f) + 120 * info, offset.y + 5 + y * (boardSize + 50.0f) + boardSize });
 				vecText[idx][info].setFontSize(14);
 				vecText[idx][info].setLength(12);
 				vecText[idx][info].setInput("");
@@ -56,6 +57,7 @@ void PVboards::update(Game game)
 			// game.print();
 			if (i < game.vecPly.back().vecEA.size())
 			{
+				/*
 				if (game.vecPly.back().vecEA[i].score > 100)
 					vecBoard[i].setColors( { 200, 200, 200 }, { 58, 108, 189 });
 				else if (game.vecPly.back().vecEA[i].score > 0)
@@ -64,6 +66,7 @@ void PVboards::update(Game game)
 					vecBoard[i].setColors( { 200, 200, 200 }, { 240, 232, 7 });
 				else
 					vecBoard[i].setColors( { 200, 200, 200 }, { 212, 71, 42 });
+				*/
 
 				vecBoard[i].setMoves(game.vecPly.back().moveList);
 				vecBoard[i].setVariant(game.vecPly.back().vecEA[i].moveList);

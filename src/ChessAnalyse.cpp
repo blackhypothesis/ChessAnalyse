@@ -78,6 +78,7 @@ int main(int argc, char *argv[])
 		window.clear();
 		pvBoards.draw(window);
 		text.draw(window);
+
 		window.display();
 
 		if (!nFPS--)

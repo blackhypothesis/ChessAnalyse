@@ -1,5 +1,7 @@
 #include "ChessBoard.h"
 
+
+
 ChessBoard::ChessBoard() :
 	offset({ 20.0f, 20.0f }),
 	fieldSize(50.0f),
@@ -27,12 +29,14 @@ ChessBoard::ChessBoard() :
 	reset();
 }
 
+
 void ChessBoard::reset()
 {
 	setChessStartPosition();
 	setScore(0);
 	updateChessBoard();
 }
+
 
 void ChessBoard::setChessStartPosition()
 {
@@ -118,7 +122,7 @@ void ChessBoard::updateChessBoard()
 				if (board[x][y].highlight > 0)
 				{
 					auto h = board[x][y].highlight;
-					board[x][y].field.setFillColor(sf::Color(144 + h, 22 + h, 172 + h));
+					board[x][y].field.setFillColor(sf::Color(144 + h/2, 22 + h, 172 + h));
 				}
 			}
 			else
@@ -127,7 +131,7 @@ void ChessBoard::updateChessBoard()
 				if (board[x][y].highlight > 0)
 				{
 					auto h = board[x][y].highlight;
-					board[7 - x][7 - y].field.setFillColor(sf::Color(144 + h, 22 + h, 172 + h));
+					board[7 - x][7 - y].field.setFillColor(sf::Color(144 + h/2, 22 + h, 172 + h));
 				}
 			}
 		}
@@ -174,48 +178,63 @@ void ChessBoard::updateMoves()
 	setChessStartPosition();
 	auto vecMovesAndVariant = vecMove;
 
-	if (vecVariant.size() > 1)
+
+	if (highlightLastMove == true)
 	{
+		int variantPly = 0;
 
-		// /*
-		for (size_t i = 0; i < 2; i++)
+		vecArrow.clear();
+		int transparency = 255;
+
+		for (auto& variantMove : vecVariant)
 		{
-			vecMovesAndVariant.push_back(vecVariant[i]);
-			x1 = (int)vecVariant[i][0] - 'a';
-			y1 = vecVariant[i][1] - '0' - 1;
-			x2 = (int)vecVariant[i][2] - 'a';
-			y2 = vecVariant[i][3] - '0' - 1;
+			x1 = (int)variantMove[0] - 'a';
+			y1 = variantMove[1] - '0' -1;
+			x2 = (int)variantMove[2] - 'a';
+			y2 = variantMove[3] - '0' - 1;
 
-			if (highlightLastMove == true && vecMove.size() > 0)
-			{
-				board[x1][y1].highlight = 1 + 70 * i;
-				board[x2][y2].highlight = 1 + 70 * i;
-			}
+			float posX1 = offset.x + x1 * fieldSize + 0.5 * x1;
+			float posY1 = offset.y + (7 - y1) * fieldSize + 0.5 * y1;
+			float posX2 = offset.x + x2 * fieldSize + 0.5 * x2;
+			float posY2 = offset.y + (7 - y2) * fieldSize + 0.5 * y2;
+
+			sf::Vector2f vpos1 = board[x1][y1].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
+			sf::Vector2f vpos2 = board[x2][y2].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
+
+			//std::cout << "x1 = " << x1 << "  y1 = " << y1 << " x2 = " << x2 << "  y2 = " << y2 << std::endl;
+			//std::cout << "posX1 = " << posX1 << "  posY1 = " << posY1 << "  posX2 = " << posX2 << "  posY2 = " << posY2 << std::endl;
+
+			Arrow arrow;
+			arrow.setBeginEnd(sf::Vector2f(posX1, posY1), sf::Vector2f(posX2, posY2));
+			arrow.setTransparency(transparency);
+			transparency -= 40;
+			if (transparency < 0)
+				transparency += 20;
+			arrow.setBeginEnd(vpos1, vpos2);
+			vecArrow.push_back(arrow);
+
+			//board[x1][y1].highlight = 1 + 35 * variantPly;
+			// board[x2][y2].highlight = 1 + 35 * variantPly;
+
+			if (variantPly < 1)
+				vecMovesAndVariant.push_back(variantMove);
+
+			if (variantPly > 5)
+				break;
+
+			variantPly++;
 		}
-		vecMovesAndVariant.pop_back();
-		// */
-
-		/*
-		for (std::vector<std::string>::iterator it = vecVariant.begin(); it <= iCurrentPly; it++)
-		{
-			vecMovesAndVariant.push_back(*it);
-
-			const int nrPly = iCurrentPly - it;
-			if (highlightLastMove == true && nrPly < 1)
-			{
-				x1 = (int)(*it)[0] - 'a';
-				y1 = (*it)[1] - '0' - 1;
-				x2 = (int)(*it)[2] - 'a';
-				y2 = (*it)[3] - '0' - 1;
-				board[x1][y1].highlight = 1 + 70 * nrPly;
-				board[x2][y2].highlight = 1 + 70 * nrPly;
-			}
-		}
-		*/
 	}
+
 
 	for (auto& move : vecMovesAndVariant)
 	{
+		if (move.size() < 4)
+		{
+			std::cout << "WARN: move invalid: move=" << move << std::endl;
+			break;
+		}
+
 		x1 = (int)move[0] - 'a';
 		y1 = move[1] - '0' - 1;
 		x2 = (int)move[2] - 'a';
@@ -371,5 +390,9 @@ void ChessBoard::draw(sf::RenderTarget& target) const
 			target.draw(scoreBar);
 		}
 	}
-}
 
+	for (auto& arrow : vecArrow)
+	{
+		arrow.draw(target);
+	}
+}

@@ -4,8 +4,11 @@
 #include <string>
 #include <sstream>
 #include <iostream>
+#include <cmath>
 
 #include <SFML/Graphics.hpp>
+
+#include "Arrow.h"
 
 
 class ChessBoard
@@ -48,6 +51,7 @@ private:
 	int score;
 
 	unsigned int x1, y1, x2, y2;
+	std::vector<Arrow> vecArrow;
 
 public:
 	void reset();
