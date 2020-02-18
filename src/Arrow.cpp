@@ -1,7 +1,7 @@
 #include "Arrow.h"
 
 Arrow::Arrow() :
-		length(150), theta(0), bodyThickness(20), topThickness(40), topLenght(30)
+		length(150), theta(0), bodyThickness(10), topThickness(20), topLenght(20)
 {
 	init();
 }
@@ -53,11 +53,10 @@ void Arrow::rotate(float rotate)
 	top.rotate(rotate);
 }
 
-void Arrow::setTransparency(int t)
+void Arrow::setColor(sf::Color color)
 {
-	body.setFillColor(sf::Color(201, 118, 8, t));
-	top.setFillColor(sf::Color(201, 118, 8, t));
-	std::cout << "t = " << t << std::endl;
+	body.setFillColor(color);
+	top.setFillColor(color);
 }
 
 void Arrow::draw(sf::RenderTarget &target) const

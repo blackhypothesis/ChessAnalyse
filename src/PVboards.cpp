@@ -1,7 +1,8 @@
 #include "PVboards.h"
 
+
 PVboards::PVboards() :
-		numberBoards(4), fieldSize(40.0f), numberInfo(3)
+		numberBoards(4), fieldSize(50.0f), numberInfo(3)
 {
 	for (size_t i = 0; i < numberBoards; i++)
 	{
@@ -13,15 +14,18 @@ PVboards::PVboards() :
 			vT.push_back(TextInput());
 		}
 		vecText.push_back(vT);
-	}
 
+		float boardSize = 8 * fieldSize;
+		//ParamBox ib(sf::Vector2f(200, 200), boardSize);
+		//vecParam.push_back(ib);
+	}
 
 	adjust();
 }
 
 void PVboards::adjust()
 {
-	sf::Vector2f offset = sf::Vector2f(0, 0);
+	sf::Vector2f offset = sf::Vector2f(10, 10);
 	float boardSize = 8 * fieldSize;
 
 	for (size_t y = 0; y < 2; y++)
@@ -71,12 +75,13 @@ void PVboards::update(Game game)
 				vecBoard[i].setMoves(game.vecPly.back().moveList);
 				vecBoard[i].setVariant(game.vecPly.back().vecEA[i].moveList);
 				vecBoard[i].setScore(game.vecPly.back().vecEA[i].score);
+				vecBoard[i].setScoreType(game.vecPly.back().vecEA[i].scoreType);
 				vecBoard[i].updateMoves();
 				vecBoard[i].setAnimateVariation(true);
 
 				std::stringstream score;
 				std::string moveList = game.vecPly.back().vecEA[i].moveList;
-				if (game.vecPly.back().vecEA[i].score_type == "cp")
+				if (game.vecPly.back().vecEA[i].scoreType == "cp")
 				{
 					score << std::setw(6) << std::setprecision(3)<< (float)(game.vecPly.back().vecEA[i].score) / 100;
 				}
@@ -125,4 +130,7 @@ void PVboards::draw(sf::RenderWindow &target) const
 			i.draw(target);
 		}
 	}
+
+	//vecParam[0].draw(target);
+
 }

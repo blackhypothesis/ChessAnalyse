@@ -27,7 +27,7 @@ private:
 public:
 	void setBeginEnd(sf::Vector2f, sf::Vector2f);
 	void rotate(float);
-	void setTransparency(int);
+	void setColor(sf::Color);
 	void draw(sf::RenderTarget&) const;
 
 };

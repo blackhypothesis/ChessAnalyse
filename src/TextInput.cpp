@@ -5,7 +5,6 @@ TextInput::TextInput() :
 {
 	namespace fs = std::filesystem;
 	auto cwp = fs::current_path();
-	std::cout << "current path = " << cwp << std::endl;
 	fontConsolas.loadFromFile("/home/marcel/workspace/ChessAnalyse/assets/Consolas.ttf");
 
 	init();

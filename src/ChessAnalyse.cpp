@@ -26,10 +26,10 @@ int main(int argc, char *argv[])
 	int nFPS = 10;
 	sf::Clock clock;
 
-	sf::RenderWindow window(sf::VideoMode(800, 950), "Chess Analyse");
+	sf::RenderWindow window(sf::VideoMode(1000, 950), "Chess Analyse");
 	window.setFramerateLimit(nFPS);
 
-	TextInput text = TextInput(sf::Vector2f(15.0f, 750.0f));
+	TextInput text = TextInput(sf::Vector2f(15.0f, 900.0f));
 	std::string input;
 
 	PVboards pvBoards;
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 			{
 			    if (event.mouseButton.button == sf::Mouse::Right)
 			    {
-			    	game.flip = ! game.flip;
+			    	userStdOut.push("game flip");
 			    }
 			}
 		}

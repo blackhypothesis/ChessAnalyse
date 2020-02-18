@@ -74,7 +74,7 @@ std::vector<std::string> Parser::parse(std::string subject)
 			ea.depth = std::stoi(match[1]);
 			ea.seldepth = std::stoi(match[2]);
 			ea.multipv = std::stoi(match[3]);
-			ea.score_type = match[4];
+			ea.scoreType = match[4];
 			ea.score = std::stoi(match[5]);
 			ea.nodes = std::stoi(match[6]);
 			ea.nps = std::stoi(match[7]);
@@ -350,7 +350,7 @@ void Parser::printShortInfo(Ply ply)
 	std::cout << "------------------------------------------------------------------------------------------------" << std::endl;
 	for (auto& ea : ply.vecEA)
 	{
-		std::cout << ea.depth << " " << ea.score_type << " " << ea.score << "   " << ea.moveList << std::endl;
+		std::cout << ea.depth << " " << ea.scoreType << " " << ea.score << "   " << ea.moveList << std::endl;
 	}
 	std::cout << "------------------------------------------------------------------------------------------------" << std::endl;
 }
@@ -371,7 +371,7 @@ void Parser::printInfo()
 			std::cout << "      depth      " << ea.depth << std::endl;
 			// std::cout << "      seldepth   " << ea.seldepth << std::endl;
 			std::cout << "      multipv    " << ea.multipv << std::endl;
-			std::cout << "      score_type " << ea.score_type << std::endl;
+			std::cout << "      score_type " << ea.scoreType << std::endl;
 			std::cout << "      score      " << ea.score << std::endl;
 			// std::cout << "      nodes      " << ea.nodes << std::endl;
 			std::cout << "      nps        " << ea.nps << std::endl;

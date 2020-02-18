@@ -49,6 +49,7 @@ private:
 	std::vector<std::string>::iterator iCurrentPly;
 
 	int score;
+	std::string scoreType;
 
 	unsigned int x1, y1, x2, y2;
 	std::vector<Arrow> vecArrow;
@@ -60,6 +61,7 @@ public:
 	void setMoves(std::string);
 	void setVariant(std::string);
 	void setScore(const int);
+	void setScoreType(const std::string&);
 	void updateMoves();
 
 	void setPosition(sf::Vector2f);

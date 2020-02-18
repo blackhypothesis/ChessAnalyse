@@ -10,6 +10,7 @@ CPP_SRCS += \
 ../src/ChessCom.cpp \
 ../src/Game.cpp \
 ../src/PVboards.cpp \
+../src/ParamBox.cpp \
 ../src/Parser.cpp \
 ../src/ProcessInOut.cpp \
 ../src/TextInput.cpp \
@@ -22,6 +23,7 @@ OBJS += \
 ./src/ChessCom.o \
 ./src/Game.o \
 ./src/PVboards.o \
+./src/ParamBox.o \
 ./src/Parser.o \
 ./src/ProcessInOut.o \
 ./src/TextInput.o \
@@ -34,6 +36,7 @@ CPP_DEPS += \
 ./src/ChessCom.d \
 ./src/Game.d \
 ./src/PVboards.d \
+./src/ParamBox.d \
 ./src/Parser.d \
 ./src/ProcessInOut.d \
 ./src/TextInput.d \

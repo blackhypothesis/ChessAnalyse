@@ -173,18 +173,35 @@ void ChessBoard::setScore(const int score)
 }
 
 
+void ChessBoard::setScoreType(const std::string& scoreType)
+{
+	this->scoreType = scoreType;
+}
+
+
 void ChessBoard::updateMoves()
 {
 	setChessStartPosition();
 	auto vecMovesAndVariant = vecMove;
 
+	if (scoreType == "mate")
+	{
+		if (score > 0)
+			score = 10000;
+		else
+			score = - 10000;
+	}
 
 	if (highlightLastMove == true)
 	{
 		int variantPly = 0;
 
 		vecArrow.clear();
-		int transparency = 255;
+		int red = 255;
+		int green = 0;
+		int blue = 128;
+		int transparency = 270;
+		int decr = 40;
 
 		for (auto& variantMove : vecVariant)
 		{
@@ -193,27 +210,43 @@ void ChessBoard::updateMoves()
 			x2 = (int)variantMove[2] - 'a';
 			y2 = variantMove[3] - '0' - 1;
 
-			float posX1 = offset.x + x1 * fieldSize + 0.5 * x1;
-			float posY1 = offset.y + (7 - y1) * fieldSize + 0.5 * y1;
-			float posX2 = offset.x + x2 * fieldSize + 0.5 * x2;
-			float posY2 = offset.y + (7 - y2) * fieldSize + 0.5 * y2;
+			sf::Vector2f vpos1;
+			sf::Vector2f vpos2;
 
-			sf::Vector2f vpos1 = board[x1][y1].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
-			sf::Vector2f vpos2 = board[x2][y2].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
+			if (!flip)
+			{
+				vpos1 = board[x1][y1].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
+				vpos2 = board[x2][y2].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
+			}
+			else
+			{
+				vpos1 = board[7 - x1][7 - y1].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
+				vpos2 = board[7 - x2][7 - y2].field.getPosition() + sf::Vector2f(fieldSize / 2, fieldSize / 2);
+			}
 
-			//std::cout << "x1 = " << x1 << "  y1 = " << y1 << " x2 = " << x2 << "  y2 = " << y2 << std::endl;
-			//std::cout << "posX1 = " << posX1 << "  posY1 = " << posY1 << "  posX2 = " << posX2 << "  posY2 = " << posY2 << std::endl;
+			sf::Color color;
+			if (transparency == 270)
+				color = sf::Color(255, 0, 0, 230);
+			else
+				color = sf::Color(red, green, blue, transparency);
 
 			Arrow arrow;
-			arrow.setBeginEnd(sf::Vector2f(posX1, posY1), sf::Vector2f(posX2, posY2));
-			arrow.setTransparency(transparency);
-			transparency -= 40;
-			if (transparency < 0)
-				transparency += 20;
+			// arrow.setBeginEnd(sf::Vector2f(posX1, posY1), sf::Vector2f(posX2, posY2));
+			arrow.setBeginEnd(vpos2, vpos2);
+
+			arrow.setColor(color);
 			arrow.setBeginEnd(vpos1, vpos2);
 			vecArrow.push_back(arrow);
 
-			//board[x1][y1].highlight = 1 + 35 * variantPly;
+			green += decr;
+			if (green > 255)
+				green -= decr;
+
+			transparency -= decr;
+			if (transparency < 0)
+				transparency += decr;
+
+			// board[x1][y1].highlight = 1 + 35 * variantPly;
 			// board[x2][y2].highlight = 1 + 35 * variantPly;
 
 			if (variantPly < 1)
