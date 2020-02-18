@@ -22,7 +22,7 @@ void Game::print()
 			std::cout << "      depth      " << ea.depth << std::endl;
 			// std::cout << "      seldepth   " << ea.seldepth << std::endl;
 			std::cout << "      multipv    " << ea.multipv << std::endl;
-			std::cout << "      score_type " << ea.scoreType << std::endl;
+			std::cout << "      score_type " << ea.score_type << std::endl;
 			std::cout << "      score      " << ea.score << std::endl;
 			// std::cout << "      nodes      " << ea.nodes << std::endl;
 			std::cout << "      nps        " << ea.nps << std::endl;

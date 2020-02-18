@@ -11,7 +11,7 @@ struct EngineAnalysis
 	unsigned int depth;
 	unsigned int seldepth;
 	unsigned int multipv;
-	std::string scoreType;
+	std::string score_type;
 	int score;
 	unsigned int nodes;
 	unsigned int nps;

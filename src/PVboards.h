@@ -7,7 +7,6 @@
 
 #include "Game.h"
 #include "ChessBoard.h"
-#include "ParamBox.h"
 #include "TextInput.h"
 
 
@@ -22,7 +21,6 @@ private:
 	std::vector<ChessBoard> vecBoard;
 	size_t numberInfo;
 	std::vector<std::vector<TextInput>> vecText;
-	std::vector<ParamBox> vecParam;
 
 	void adjust();
 
