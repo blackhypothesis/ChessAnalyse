@@ -1,10 +1,11 @@
 #include "PVboards.h"
 
 PVboards::PVboards() :
-		numberBoards(4), fieldSize(40.0f), numberInfo(3)
+		numberBoards(4), fieldSize(40.0f), numberInfo(6)
 {
 	for (size_t i = 0; i < numberBoards; i++)
 	{
+		ChessBoard cb;
 		vecBoard.push_back(ChessBoard());
 
 		std::vector<TextInput> vT;
@@ -15,13 +16,12 @@ PVboards::PVboards() :
 		vecText.push_back(vT);
 	}
 
-
 	adjust();
 }
 
 void PVboards::adjust()
 {
-	sf::Vector2f offset = sf::Vector2f(0, 0);
+	sf::Vector2f offset = sf::Vector2f(10, 10);
 	float boardSize = 8 * fieldSize;
 
 	for (size_t y = 0; y < 2; y++)
@@ -29,19 +29,43 @@ void PVboards::adjust()
 		for (size_t x = 0; x < 2; x++)
 		{
 			unsigned int idx = 2 * y + x;
-			vecBoard[idx].setPosition( { offset.x + x * (boardSize + 50.0f), offset.y + y * (boardSize + 50.0f) });
+			vecBoard[idx].setPosition( { offset.x + x * (boardSize + 50.0f), offset.y + y * (boardSize + 90.0f) });
 			vecBoard[idx].setFieldSize(fieldSize);
 
-			for (size_t info = 0; info < numberInfo; info++)
+			for (size_t iy = 0; iy < 2; iy++)
 			{
-				vecText[idx][info].setPosition( { offset.x + x * (boardSize + 50.0f) + 120 * info, offset.y + 5 + y * (boardSize + 50.0f) + boardSize });
-				vecText[idx][info].setFontSize(14);
-				vecText[idx][info].setLength(12);
-				vecText[idx][info].setInput("");
+				float offsetX = offset.x;
+
+				for (size_t ix = 0; ix < 3; ix++)
+				{
+					unsigned int idxInfo = 3 * iy + ix;
+					vecText[idx][idxInfo].setFontSize(14);
+					vecText[idx][idxInfo].setLength(8 + ix * 5);
+					// vecText[idx][idxInfo].setPosition( { offset.x + x * (boardSize + 50.0f) + 120 * ix, offset.y + 8 + y * (boardSize + 90.0f) + boardSize  + 30 * iy});
+
+
+					vecText[idx][idxInfo].setPosition( { offsetX + x * (boardSize + 50.0f), offset.y + 8 + y * (boardSize + 90.0f) + boardSize  + 30 * iy});
+
+					offsetX += vecText[idx][idxInfo].getWidth() + 10;
+
+					vecText[idx][idxInfo].setInput("");
+				}
 			}
 		}
 	}
 }
+
+std::string PVboards::numWithCommas(const std::string& number)
+{
+	std::string numWithCommas = number;
+	int insertPosition = numWithCommas.length() - 3;
+	while (insertPosition > 0) {
+	    numWithCommas.insert(insertPosition, ",");
+	    insertPosition-=3;
+	}
+	return numWithCommas;
+}
+
 
 void PVboards::update(Game game)
 {
@@ -84,10 +108,19 @@ void PVboards::update(Game game)
 				{
 					score << "M " << game.vecPly.back().vecEA[i].score;
 				}
-				moveList = moveList.substr(0, 10);
+				moveList = moveList.substr(0, 15);
 				int depth = game.vecPly.back().vecEA[i].depth;
+				std::string nps = std::to_string(game.vecPly.back().vecEA[i].nps);
+				std::string nodes = std::to_string(game.vecPly.back().vecEA[i].nodes);
+				auto ply_nr = game.vecPly.back().ply_nr;
+				std::string moveColor = "white";
+				std::string move_nr = std::to_string((ply_nr + 1) / 2);
+				if (ply_nr % 2 == 0)
+					moveColor = "black";
+				std::string move_info = moveColor + " " + move_nr;
 
-				std::vector<std::string> infoMsg{ moveList, score.str(), std::to_string(depth) };
+
+				std::vector<std::string> infoMsg{ score.str(), move_info, moveList, std::to_string(depth), numWithCommas(nps), numWithCommas(nodes) };
 
 				for (size_t info = 0; info < numberInfo; info++)
 				{

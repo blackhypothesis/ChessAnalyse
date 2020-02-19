@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <filesystem>
+#include <vector>
 #include <string>
 
 #include <SFML/Graphics.hpp>
@@ -15,6 +16,8 @@ public:
 private:
 	sf::Vector2f position;
 	sf::RectangleShape backgroundRect;
+	float width;
+	float height;
 	sf::Text text;
 	unsigned int maxTextLength;
 	unsigned int fontSize;
@@ -31,5 +34,8 @@ public:
 	void setPosition(sf::Vector2f);
 	void setFontSize(int);
 	void setLength(int);
+	float getWidth() const;
+	float getHeight() const;
 	void draw(sf::RenderWindow&) const;
 };
+

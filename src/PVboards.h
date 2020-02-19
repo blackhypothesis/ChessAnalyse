@@ -7,7 +7,7 @@
 
 #include "Game.h"
 #include "ChessBoard.h"
-#include "TextInput.h"
+#include "Widget.h"
 
 
 class PVboards
@@ -23,6 +23,7 @@ private:
 	std::vector<std::vector<TextInput>> vecText;
 
 	void adjust();
+	std::string numWithCommas(const std::string&);
 
 public:
 	void update(Game);

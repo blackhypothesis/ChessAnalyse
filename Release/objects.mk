@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lboost_thread -lboost_filesystem -lsfml-system -lsfml-network -lsfml-window -lsfml-graphics
+LIBS := -lsfml-system -lsfml-window -lsfml-network -lsfml-graphics -lsfml-audio
 

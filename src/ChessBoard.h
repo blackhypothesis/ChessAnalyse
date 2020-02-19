@@ -30,8 +30,8 @@ private:
 	struct Field
 	{
 		Field() = default;
-		PieceType piece;
-		int highlight;
+		PieceType piece = EMPTY;
+		int highlight = 0;
 		sf::Sprite pieceSprite;
 		sf::RectangleShape field;
 	};

@@ -10,11 +10,10 @@ CPP_SRCS += \
 ../src/ChessCom.cpp \
 ../src/Game.cpp \
 ../src/PVboards.cpp \
-../src/ParamBox.cpp \
 ../src/Parser.cpp \
 ../src/ProcessInOut.cpp \
-../src/TextInput.cpp \
-../src/ThreadSaveQueue.cpp 
+../src/ThreadSaveQueue.cpp \
+../src/Widget.cpp 
 
 OBJS += \
 ./src/Arrow.o \
@@ -23,11 +22,10 @@ OBJS += \
 ./src/ChessCom.o \
 ./src/Game.o \
 ./src/PVboards.o \
-./src/ParamBox.o \
 ./src/Parser.o \
 ./src/ProcessInOut.o \
-./src/TextInput.o \
-./src/ThreadSaveQueue.o 
+./src/ThreadSaveQueue.o \
+./src/Widget.o 
 
 CPP_DEPS += \
 ./src/Arrow.d \
@@ -36,18 +34,17 @@ CPP_DEPS += \
 ./src/ChessCom.d \
 ./src/Game.d \
 ./src/PVboards.d \
-./src/ParamBox.d \
 ./src/Parser.d \
 ./src/ProcessInOut.d \
-./src/TextInput.d \
-./src/ThreadSaveQueue.d 
+./src/ThreadSaveQueue.d \
+./src/Widget.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -std=c++17 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -std=c++17 -O3 -Wall -c -fmessage-length=0 -pthread -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

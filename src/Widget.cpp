@@ -1,4 +1,4 @@
-#include "TextInput.h"
+#include "Widget.h"
 
 TextInput::TextInput() :
 		position(10.0f, 10.0f), maxTextLength(32), fontSize(15), input(""), textInputStr("")
@@ -23,10 +23,10 @@ TextInput::TextInput(sf::Vector2f position) :
 void TextInput::init()
 {
 	// approximated size of input field for font Consolas.ttf
-	float backgroundWidth = fontSize * maxTextLength * 0.59f;
-	float backgroundHeight = fontSize * 1.6f;
+	width = fontSize * maxTextLength * 0.59f;
+	height = fontSize * 1.6f;
 	sf::Vector2f textOffset = { 5.0f, 3.0f };
-	backgroundRect.setSize( { backgroundWidth, backgroundHeight });
+	backgroundRect.setSize( { width, height });
 	backgroundRect.setFillColor(sf::Color( { 64, 64, 64 }));
 	backgroundRect.setOutlineColor(sf::Color( { 128, 128, 128 }));
 	backgroundRect.setOutlineThickness(1.0f);
@@ -100,6 +100,17 @@ void TextInput::setLength(int length)
 	this->maxTextLength = length;
 	init();
 }
+
+float TextInput::getWidth() const
+{
+	return width;
+}
+
+float TextInput::getHeight() const
+{
+	return height;
+}
+
 void TextInput::draw(sf::RenderWindow &target) const
 {
 	target.draw(backgroundRect);
