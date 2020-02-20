@@ -17,6 +17,10 @@ int main(int argc, char *argv[])
 {
 	std::string cwp(argv[0]);
 
+	sf::Vector2i mousePos;
+	bool buttonPressed;
+	bool buttonReleased;
+
 	const std::string chessEnginePath = "/home/marcel/workspace/ChessAnalyse/assets/bin/stockfish-bmi2";
 	ThreadSaveQueue stdIn("stdIn");
 	ThreadSaveQueue stdOut("stdOut");
@@ -32,7 +36,7 @@ int main(int argc, char *argv[])
 	TextInput text = TextInput(sf::Vector2f(10.0f, 840.0f));
 	std::string input;
 
-	PVboards pvBoards;
+	PVboards pvBoards(userStdOut);
 
 	Game game;
 
@@ -54,16 +58,39 @@ int main(int argc, char *argv[])
 			if (event.type == sf::Event::Closed)
 				window.close();
 
-			if (event.type == sf::Event::TextEntered)
-				text.processEvent(event);
+			if (event.type == sf::Event::MouseMoved)
+				mousePos = { event.mouseMove.x, event.mouseMove.y };
+
+			buttonPressed = false;
+			buttonReleased = false;
 
 			if (event.type == sf::Event::MouseButtonPressed)
 			{
+				if (event.mouseButton.button == sf::Mouse::Left)
+				{
+					buttonPressed = true;
+					mousePos = { event.mouseButton.x, event.mouseButton.y };
+				}
+				else
+					buttonPressed = false;
+
 			    if (event.mouseButton.button == sf::Mouse::Right)
 			    {
 			    	game.flip = ! game.flip;
 			    }
 			}
+
+			if (event.type == sf::Event::MouseButtonReleased)
+				if (event.mouseButton.button == sf::Mouse::Left)
+				{
+					buttonReleased = true;
+					mousePos = { event.mouseButton.x, event.mouseButton.y };
+				}
+
+			pvBoards.mouseAction(mousePos, buttonPressed, buttonReleased);
+
+			if (event.type == sf::Event::TextEntered)
+				text.processEvent(event);
 		}
 
 		input = text.getInput();

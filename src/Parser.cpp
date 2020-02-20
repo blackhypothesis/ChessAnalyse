@@ -269,6 +269,11 @@ std::vector<std::string> Parser::parseUser(std::string subject)
 				multiPV_value = std::stoi(param1);
 				instruction.push("setoption name MultiPV value " + std::to_string(multiPV_value));
 			}
+			else if (subCommand == "thread")
+			{
+				threads_value = std::stoi(param1);
+				instruction.push("setoption name Threads value " + std::to_string(threads_value));
+			}
 			else if (subCommand == "flip")
 			{
 				game.flip = ! game.flip;

@@ -1,6 +1,7 @@
 #include "PVboards.h"
 
-PVboards::PVboards() :
+PVboards::PVboards(ThreadSaveQueue& inUserStdOut) :
+		userStdOut(inUserStdOut),
 		numberBoards(4), fieldSize(40.0f), numberInfo(6)
 {
 	for (size_t i = 0; i < numberBoards; i++)
@@ -17,7 +18,13 @@ PVboards::PVboards() :
 	}
 
 	adjust();
-}
+
+	valueThreads.setParameterName("Threads");
+	valueThreads.setMinMaxValue(1, 10);
+	valueThreads.setParameterValue(2);
+	valueThreads.setStep(1);
+	valueThreads.setPosition(sf::Vector2f(300, 822));
+ }
 
 void PVboards::adjust()
 {
@@ -144,7 +151,19 @@ void PVboards::update(Game game)
 	}
 }
 
-void PVboards::draw(sf::RenderWindow &target) const
+bool PVboards::mouseAction(sf::Vector2i mousePos, bool buttonPressed, bool buttonReleased)
+{
+	bool actionReturn = valueThreads.mouseAction(mousePos, buttonPressed, buttonReleased);
+
+	if (actionReturn == true)
+	{
+		userStdOut.push("game thread " + std::to_string(valueThreads.getParameterValue()));
+	}
+	return actionReturn;
+}
+
+
+void PVboards::draw(sf::RenderTarget &target) const
 {
 	for (auto &board : vecBoard)
 	{
@@ -158,4 +177,5 @@ void PVboards::draw(sf::RenderWindow &target) const
 			i.draw(target);
 		}
 	}
+	valueThreads.draw(target);
 }
