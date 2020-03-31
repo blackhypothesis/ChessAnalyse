@@ -9,6 +9,9 @@ Parser::Parser(ThreadSaveQueue& inStdOut, ThreadSaveQueue& inUserStdOut, ThreadS
 
 {
 	init();
+	instruction.push("setoption name Hash value " + std::to_string(hash_value));
+	instruction.push("setoption name Threads value " + std::to_string(threads_value));
+	instruction.push("setoption name MultiPV value " + std::to_string(multiPV_value));
 }
 
 void Parser::init()
@@ -31,12 +34,7 @@ void Parser::init()
 	threads_value = 2;
 	multiPV_value = 4;
 
-	instruction.push("setoption name Hash value " + std::to_string(hash_value));
-	instruction.push("setoption name Threads value " + std::to_string(threads_value));
-	instruction.push("setoption name MultiPV value " + std::to_string(multiPV_value));
-
 	waitForReadyOK = false;
-
 
 	start_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 }
@@ -64,7 +62,6 @@ std::vector<std::string> Parser::parse(std::string subject)
 	const std::regex rexReadyOK(R"(.*readyok.*)");
 
 	std::smatch match;
-
 
 	try
 	{
@@ -108,58 +105,25 @@ std::vector<std::string> Parser::parse(std::string subject)
 				{
 					game.vecPly.back().vecEA.push_back(EngineAnalysis());
 				}
+
+				game.vecPly.back().hash_value = hash_value;
+				game.vecPly.back().threads_value = threads_value;
+				game.vecPly.back().multiPV_value = multiPV_value;
+
 				game.vecPly.back().elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count() - start_time;
 			}
 
-			/*
-
-			if (current_depth != ea.depth)
-				new_depth = true;
-
-			if (new_depth)
-			{
-				new_depth = false;
-				new_pv = false;
-				current_depth = ea.depth;
-				current_pv = 0;
-				game.vecPly.back().vecEA.clear();
-			}
-
-			if (current_pv < ea.multipv)
-				new_pv = true;
-
-			if (new_pv)
-			{
-				new_pv = false;
-				current_pv = ea.multipv;
-				game.vecPly.back().vecEA.push_back(ea);
-				// sort the variants in alphabetical order confuses sometimes, better to
-				// have it in the order 'best move first'.
-				// std::sort(game.vecPly.back().vecEA.begin(), game.vecPly.back().vecEA.end());
-
-				if (current_pv_count < game.vecPly.back().vecEA.size())
-					current_pv_count++;
-
-				// print eval and board
-				if (viewState == SHORT && game.vecPly.back().vecEA.size() == current_pv_count)
-				{
-					// ##### prints too much info.
-					// printShortInfo(game.vecPly.back());
-				}
-			}
-			*/
-
 			game.vecPly.back().vecEA[ea.multipv - 1] = ea;
 
-
-
+			// sort the variants in alphabetical order confuses sometimes, better to
+			// have it in the order 'best move first'.
+			// std::sort(game.vecPly.back().vecEA.begin(), game.vecPly.back().vecEA.end());
 		}
 		// "readyok"
 		// as soon as the engine writes "readyok" the userStdOut queue can be parsed again.
 		else if (std::regex_search(subject, match, rexReadyOK))
 		{
 			waitForReadyOK = false;
-			// std::cout << "READYOK!" << std::endl;
 		}
 		// info from chess engine
 		else if (std::regex_search(subject, match, rexInfoCurrentMove))
@@ -233,8 +197,10 @@ std::vector<std::string> Parser::parseUser(std::string subject)
 				vecInstruction.push_back("stop");
 				vecInstruction.push_back("position startpos");
 				vecInstruction.push_back("ucinewgame");
+				vecInstruction.push_back("setoption name Hash value " + std::to_string(hash_value));
+				vecInstruction.push_back("setoption name Threads value " + std::to_string(threads_value));
+				vecInstruction.push_back("setoption name MultiPV value " + std::to_string(multiPV_value));
 				init();
-				std::cout << ">> game new" << std::endl;
 				start_time = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 			}
 			else if (subCommand == "auto")
@@ -273,6 +239,16 @@ std::vector<std::string> Parser::parseUser(std::string subject)
 			{
 				threads_value = std::stoi(param1);
 				instruction.push("setoption name Threads value " + std::to_string(threads_value));
+			}
+			else if (subCommand == "hash")
+			{
+				threads_value = std::stoi(param1);
+				instruction.push("setoption name Hash value " + std::to_string(hash_value));
+			}
+			else if (subCommand == "multipv")
+			{
+				threads_value = std::stoi(param1);
+				instruction.push("setoption name MultiPV value " + std::to_string(multiPV_value));
 			}
 			else if (subCommand == "flip")
 			{

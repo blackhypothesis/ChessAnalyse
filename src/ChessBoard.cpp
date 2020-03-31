@@ -277,32 +277,41 @@ void ChessBoard::updateMoves()
 		PieceType promotionPiece = EMPTY;
 
 		// white short rochade
-		if (board[x1][y1].piece == WK && x2 == 6 && y2 == 0)
+		if (board[x1][y1].piece == WK && x1 == 4 && y1 == 0 && x2 == 6 && y2 == 0)
 		{
 			board[7][0].piece = EMPTY;
 			board[5][0].piece = WR;
 		}
 		// white long rochade
-		if (board[x1][y1].piece == WK && x2 == 2 && y2 == 0)
+		if (board[x1][y1].piece == WK && x1 == 4 && y1 == 0 && x2 == 2 && y2 == 0)
 		{
 			board[0][0].piece = EMPTY;
 			board[3][0].piece = WR;
 		}
 		// black short rochade
-		if (board[x1][y1].piece == BK && x2 == 6 && y2 == 7)
+		if (board[x1][y1].piece == BK && x1 == 4 && y1 == 7 && x2 == 6 && y2 == 7)
 		{
 			board[7][7].piece = EMPTY;
 			board[5][7].piece = BR;
 		}
 		// black long rochade
-		if (board[x1][y1].piece == BK && x2 == 2 && y2 == 7)
+		if (board[x1][y1].piece == BK && x1 == 4 && y1 == 7 && x2 == 2 && y2 == 7)
 		{
 			board[0][7].piece = EMPTY;
 			board[3][7].piece = BR;
 		}
 
 		// en passant
-		// tbd
+		// white
+		if (board[x1][y1].piece == WP && x1 != x2 && y1 == 4 && board[x2][y2].piece == EMPTY)
+		{
+			board[x2][y1].piece = EMPTY;
+		}
+		// black
+		if (board[x1][y1].piece == BP && x1 != x2 && y1 == 3 && board[x2][y2].piece == EMPTY)
+		{
+			board[x2][y1].piece = EMPTY;
+		}
 
 		// pawn promotion
 		if (move.size() == 5)

@@ -27,6 +27,10 @@ struct EngineAnalysis
 
 struct Ply
 {
+	unsigned int hash_value;
+	unsigned int threads_value;
+	unsigned int multiPV_value;
+
 	unsigned int ply_nr;
 	std::string moveList;
 	unsigned long long int elapsed_time;

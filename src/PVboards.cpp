@@ -101,7 +101,6 @@ void PVboards::update(Game game)
 
 				vecBoard[i].setMoves(game.vecPly.back().moveList);
 				vecBoard[i].setVariant(game.vecPly.back().vecEA[i].moveList);
-				vecBoard[i].setScore(game.vecPly.back().vecEA[i].score);
 				vecBoard[i].updateMoves();
 				vecBoard[i].setAnimateVariation(true);
 
@@ -110,11 +109,14 @@ void PVboards::update(Game game)
 				if (game.vecPly.back().vecEA[i].score_type == "cp")
 				{
 					score << std::setw(6) << std::setprecision(3)<< (float)(game.vecPly.back().vecEA[i].score) / 100;
+					vecBoard[i].setScore(game.vecPly.back().vecEA[i].score);
 				}
 				else
 				{
 					score << "M " << game.vecPly.back().vecEA[i].score;
+					vecBoard[i].setScore(game.vecPly.back().vecEA[i].score * 1000);
 				}
+
 				moveList = moveList.substr(0, 15);
 				int depth = game.vecPly.back().vecEA[i].depth;
 				std::string nps = std::to_string(game.vecPly.back().vecEA[i].nps);
@@ -126,8 +128,9 @@ void PVboards::update(Game game)
 					moveColor = "black";
 				std::string move_info = moveColor + " " + move_nr;
 
-
 				std::vector<std::string> infoMsg{ score.str(), move_info, moveList, std::to_string(depth), numWithCommas(nps), numWithCommas(nodes) };
+
+				valueThreads.setParameterValue(game.vecPly.back().threads_value);
 
 				for (size_t info = 0; info < numberInfo; info++)
 				{
